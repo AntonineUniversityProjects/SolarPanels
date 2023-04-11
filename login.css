@@ -8,9 +8,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
-
+#togglePassword{
+    margin-left: -30px; 
+  cursor: pointer;
+}
+#i1{
+    height:40px; text-align: center;
+}
+ .email,.password{
+    margin: auto;
+}
+.title{
+   
+    text-align: center;
+}
 body {
     height: 100vh;
     display: flex;

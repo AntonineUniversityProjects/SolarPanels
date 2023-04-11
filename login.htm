@@ -5,28 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Document</title>
 
 
 </head>
 
 <body>
-
+<script src="login.js"></script>
 
 
 
     <div class="container">
-        <div class="title">Car Registration</div>
+        <div class="title">Registration</div>
         <div class="content">
             <form action="/php/DriverInsert.php" method="POST">
                 <div class="user-details">
                     <div class="input-box">
-                        <!-- <span class="details">Full Name</span> -->
-                        <input type="text" name="fullName" placeholder="email" required>
-
+                        <!-- <span class="details">Full Name</span>
+                       <input type="text" name="fullName" placeholder="email" required><br>
+                        <br>
+                      -->
                     </div>
-
+                   <div class="email" >
+                   <input type="text" placeholder="email" size="40" id="i1" >
+                     <br>
+                     <br>
+             </div>
+                 <div class="password" style="margin: auto;">
+                    <br> <input type="password"placeholder="password"size="40" id="i1">
+                    <i class="far fa-eye" id="togglePassword"></i>
+               
+                     </div>
+                     <div style="margin: auto; margin-top: 5%;">
+                     <a href="#" style="text-align: center;">Don't have an account ?</a></div>
+                    
                     <!-- <div class="input-box">
                         <span class="details">Rank</span>
                         <input type="number" min="1" max="10" name="Rank" placeholder="Enter your rank from 1 to 10"
@@ -42,10 +57,10 @@
                         <span class="details">Phone Number</span>
                         <input type="tel" name="phone" placeholder="Enter your number" required>
                     </div> -->
-                    <div class="input-box">
-                        <!-- <span class="details">Password</span> -->
-                        <input type="password" name="pass" placeholder="Enter your password" required>
-                    </div>
+                  <!--<div class="input-box">
+                      <span class="details">Password</span> 
+                       <br><br> <input type="password" name="pass" placeholder="Enter your password" required>
+                    </div> -->  
 <!-- 
                     <div class="input-box">
                         <span class="details"> Car type </span>
@@ -78,7 +93,7 @@
 
                 </div>
 
-                <div class="button">
+                <br><div class="button">
                     <input type="submit" value="Register">
                 </div>
 
