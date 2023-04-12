@@ -1,0 +1,24 @@
+{
+  "name": "solarpanels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonineUniversityProjects/SolarPanels.git"
+  },
+  "authors": [
+
+    "Roy.Gebrayel",
+    "Abbas.Hamyeh"
+  ],
+  
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntonineUniversityProjects/SolarPanels/issues"
+  },
+  "homepage": "https://github.com/AntonineUniversityProjects/SolarPanels#readme"
+}
