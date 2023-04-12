@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="login.css">
     <script src="login.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <title>Document</title>
 
 
@@ -30,71 +30,31 @@
                         <br>
                       -->
                     </div>
-                   <div class="email" >
-                   <input type="text" name="email" placeholder="email" size="40" id="i1" >
-                     <br>
-                     <br>
-             </div>
-                 <div class="pass" style="margin: auto;">
-                    <br> <input type="password" name="password" placeholder="password" size="40" id="i1">
-                    <i class="bi bi-eye-slash" id="togglePassword"></i>
-               
-                     </div>
-                     <div style="margin: auto; margin-top: 5%;">
-                     <a href="#" style="text-align: center;">Don't have an account ?</a></div>
+                    <div class="email">
+                        <input type="text" name="email" placeholder="email" size="40" class="i1">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="pass">
+                        <br> <input type="password" name="password" placeholder="password" size="40" id="password"
+                           class="i1" >
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+
+                    </div>
+                    <div style="margin: auto; margin-top: 5%;">
+                        <a class="noaccount" href="#" >forget email or password  ?</a>
+                    </div>
+
+                    <div> 
+                        <hr class="_9cn6ba5" style="margin: auto;">
+                        <div> or </div>
+                        <hr style="margin: auto;">
                     
-                    <!-- <div class="input-box">
-                        <span class="details">Rank</span>
-                        <input type="number" min="1" max="10" name="Rank" placeholder="Enter your rank from 1 to 10"
-                            required>
-                    </div> 
-
-
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" name="email" placeholder="Enter your email" required>
                     </div>
-                    <div class="input-box">
-                        <span class="details">Phone Number</span>
-                        <input type="tel" name="phone" placeholder="Enter your number" required>
-                    </div> -->
-                  <!--<div class="input-box">
-                      <span class="details">Password</span> 
-                       <br><br> <input type="password" name="pass" placeholder="Enter your password" required>
-                    </div> -->  
-<!-- 
-                    <div class="input-box">
-                        <span class="details"> Car type </span>
-                        <input type="text" name="cartype" placeholder="input your car type" required>
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details"> VIN </span>
-                        <input type="text" name="vin" placeholder="input you car VIN" required>
-
-
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details"> horse power </span>
-                        <input type="text" name="carpower" placeholder="input you car power" required>
-
-
-                    </div>
-
-                    <div class="input-box">
-                        <span class="details"> color </span>
-                        <input type="text" name="color" placeholder="input your car color" required>
-
-
-                    </div> -->
-
-
-
-
                 </div>
 
-                <br><div class="button">
+                <br>
+                <div class="button">
                     <input type="submit" value="Register">
                 </div>
 
@@ -104,26 +64,26 @@
 
     </form>
     <script>
-         const togglePassword = document.querySelector("#togglePassword");
-            const password = document.querySelector("#password");
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector(".pass #password");
 
-            togglePassword.addEventListener("click", function () {
-                // toggle the type attribute
-                const type = password.getAttribute("type") === "password" ? "text" : "password";
-                password.setAttribute("type", type);
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
 
-                // toggle the icon
-                this.classList.toggle("bi-eye");
-            });
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
 
-            // prevent form submit
-            const form = document.querySelector("form");
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-            });
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
 
     </script>
- 
+
 </body>
 
 </html>
