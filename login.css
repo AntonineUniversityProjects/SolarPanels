@@ -138,7 +138,13 @@ form input[type="radio"] {
 
 form .button {
     height: 45px;
-    margin: 35px 0
+    margin: 35px 0;
+}
+form .or {
+   
+    top: 20px;
+    left: 40px;
+
 }
 
 form .button input {
