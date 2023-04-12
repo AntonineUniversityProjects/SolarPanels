@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/views/login.css">
+
+    <title>Login</title>
+</head>
+<style>
+      body {
+       font-family: Arial, sans-serif;
+       background-color: #f2f2f2;
+   }
+
+   .login-form {
+       width: 305px;
+       margin: 50px auto;
+       background-color: #fff;
+       padding: 20px;
+       border-radius: 5px;
+       box-shadow: 0px 0px 10px #888;
+   }
+
+   h2 {
+       text-align: center;
+       color: #555;
+   }
+
+   input[type="text"],
+   input[type="password"] {
+       width: 100%;
+       padding: 12px 20px;
+       margin: 8px 0;
+       display: inline-block;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+   }
+
+   button {
+       background-color: #4CAF50;
+       color: white;
+       padding: 14px 20px;
+       margin: 8px 0;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+       width: 100%;
+   }
+
+   button:hover {
+       background-color: #45a049;
+   }
+
+
+
+   .imgcontainer {
+       text-align: center;
+       margin: 24px 0 12px 0;
+   }
+
+   img.avatar {
+       width: 40%;
+       border-radius: 50%;
+   }
+
+   .container {
+       padding: 16px;
+   }
+
+   span.psw {
+       float: right;
+       padding-top: 16px;
+   }
+
+   /* Change styles for span and cancel button on extra small screens */
+   @media screen and (max-width: 300px) {
+       span.psw {
+           display: block;
+           float: none;
+       }
+
+
+   }
+
+
+   .social-login {
+       margin-bottom: 20px;
+   }
+
+   .btn-google,
+   .btn-facebook,
+   .btn-twitter,
+   .btn-github {
+       display: inline-block;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+       padding: 10px 20px;
+       margin-right: 10px;
+       font-size: 16px;
+       color: #333;
+       text-decoration: none;
+       transition: all 0.3s ease-in-out;
+   }
+
+   .btn-google:hover,
+   .btn-facebook:hover,
+   .btn-github:hover,
+   .btn-twitter:hover {
+       background-color: #4CAF50;
+       border-color: #ccc;
+       color: #fff;
+   }
+
+   .eye {
+       display: inline-block;
+       color: red;
+   }
+</style>
+
+<body>
+    <form class="login-form">
+        <div class="imgcontainer">
+            <img src="avatar.png" alt="Avatar" class="avatar">
+        </div>
+
+        <h2>Login </h2>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+            <i class="bi bi-eye-slash eye" id="togglePassword"></i>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+
+
+            <div class="social-login">
+                <p>Or login with:</p>
+                <a href="/auth/logout" class="btn-google"> <i class="fa fa-google"></i></a>
+                <a href="#" class="btn-facebook"> <i class="fa fa-facebook"></i></a>
+                <a href="/" class="btn-github"><i class="fa fa-github"></i></a>
+                <a href="#" class="btn-twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+            <p> Don't have an account? <span> <a href="/signup/signup.htm"> sign in </a></span></p>
+    </form>
+    </div>
+
+
+    </div>
+    </form>
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>

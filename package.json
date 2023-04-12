@@ -11,14 +11,17 @@
     "url": "git+https://github.com/AntonineUniversityProjects/SolarPanels.git"
   },
   "authors": [
-
     "Roy.Gebrayel",
     "Abbas.Hamyeh"
   ],
-  
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AntonineUniversityProjects/SolarPanels/issues"
   },
-  "homepage": "https://github.com/AntonineUniversityProjects/SolarPanels#readme"
+  "homepage": "https://github.com/AntonineUniversityProjects/SolarPanels#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
 }
