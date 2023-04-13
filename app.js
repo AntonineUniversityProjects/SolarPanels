@@ -9,7 +9,7 @@ app.set('view engine','ejs');
 app.use('/auth',authRoutes);
 
 app.get('/',(req,res)=>{
-res.render('home');
+res.render('login');
 })
 
 app.listen(3000,() => {
