@@ -140,10 +140,6 @@
           return false;
         }
         // Check if the password is empty
-        if (password == "") {
-          alert("Password field must be filled out");
-          return false;
-        } 
   // Get the value of the input field with id="password"
   var password = document.getElementById("password").value;
   // Regular expression to check if the password is strong enough
@@ -155,7 +151,7 @@
   }
   // Check if the password is strong enough
   if (!password.match(passwordRegex)) {
-    alert("Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, and one number");
+    alert("enter a strong passowrd(with numbers and upper cases)");
     return false;
   }
   
