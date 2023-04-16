@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
 res.render('login');
 })
 
-app.listen(3001,() => {
+app.listen(3000,() => {
     console.log('app now listening for requests on port 3000');
 
 });
