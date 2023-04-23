@@ -4,7 +4,18 @@ const keys = require('./keys');
 const User = require ('../models/user-model');
 const { findOne } = require('../models/user-model');
 
-     
+passport.serializeUser((user,done)=>{
+    done(null,user.id);
+});
+ 
+passport.deserializeUser((id,done)=>{
+    User.findById(id).then((user)=>{
+done(null,user);
+    });
+    
+});
+ 
+
 
 passport.use(
     new GoogleStrategy({
@@ -22,6 +33,7 @@ passport.use(
             if(currentUser){
 
                 console.log('user is',currentUser)
+          done(null,currentUser)  ;
             }
             else {
                   new User({
@@ -29,7 +41,7 @@ passport.use(
             googleId : profile.id
         }).save().then((newUser)=>{
             console.log("new user create" + newUser);
-
+            done(null,newUser);
         });
             }
            
