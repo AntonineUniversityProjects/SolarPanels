@@ -92,6 +92,21 @@
    .social-login {
        margin-bottom: 20px;
    }
+   .password-container {
+  position: relative;
+}
+
+#password {
+  padding-right: 35px; /* Adjust the padding to make room for the icon */
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
    .btn-google,
    .btn-facebook,
@@ -171,14 +186,15 @@
             <input type="text" placeholder="Enter Username" name="uname" id="email" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="password" required>
-            <i class="bi bi-eye-slash eye" id="togglePassword"></i>
-
+            <div class="password-container">
+              <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+              <i class="bi bi-eye-slash eye" id="togglePassword"></i>
+            </div>
             <button type="submit">Login</button>
             <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
+              <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
-        </div>
+          </div>
 
         <div class="container" style="background-color:#f1f1f1">
 
