@@ -1,0 +1,5 @@
+use('solarpanels-login');
+
+db.createCollection('users');
+
+db.users.insertOne({'email':'abbashamyeh2004@gmail.com','name':'Abbas','age':'19','gender':'male'});
