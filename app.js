@@ -2,9 +2,19 @@ const express = require('express');
 const authRoutes = require('./routes/auths-routes');
 const bodyParser = require('body-parser');
 const app = express();
+const keys = require('./config/keys');
 const passportSetup = require('./config/passport-setup');
+const mongoose = require('mongoose');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+//mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
+mongoose.connect(keys.mongodb.dbauth)
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((error) => {
+    console.log('Error connecting to MongoDB');
+  });
 
 // Handle form submission
 app.get('/submit-form', function (req, res) {
