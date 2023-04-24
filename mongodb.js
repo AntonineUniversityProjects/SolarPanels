@@ -1,39 +1,39 @@
-const MongoClient = require('mongodb').MongoClient;
-const keys = require('./config/keys');
-const app = require('.app');
-const client = new MongoClient(keys.mongodb.dbauth, { useNewUrlParser: true, useUnifiedTopology: true });
+// const MongoClient = require('mongodb').MongoClient;
+// const keys = require('./config/keys');
+// const app = require('.app');
+// const client = new MongoClient(keys.mongodb.dbauth, { useNewUrlParser: true, useUnifiedTopology: true });
 
-client.connect(err => {
-    if (err) {
-        console.log("Error connecting to database:", err);
-        return;
-    }
+// client.connect(err => {
+//     if (err) {
+//         console.log("Error connecting to database:", err);
+//         return;
+//     }
 
-    console.log("Database connected!");
-});
-
-
-const collection = client.db("solarpanels-login").collection("users");
-
-const document = { name: app.name, email: app.email };
+//     console.log("Database connected!");
+// });
 
 
+// const collection = client.db("solarpanels-login").collection("users");
 
-// Insert the document into the collection
+// const document = { name: app.name, email: app.email };
 
 
 
-collection.insertOne(document, function (err, res) {
-    if (err) {
-        console.log("Error inserting document:", err);
-        return;
-    }
-
-    console.log("Document inserted successfully");
+// // Insert the document into the collection
 
 
-    client.close();
+
+// collection.insertOne(document, function (err, res) {
+//     if (err) {
+//         console.log("Error inserting document:", err);
+//         return;
+//     }
+
+//     console.log("Document inserted successfully");
+
+
+//     client.close();
     
 
 
-});
+// });

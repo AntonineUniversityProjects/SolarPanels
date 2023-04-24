@@ -6,6 +6,7 @@ const passportSetup = require('./config/passport-setup');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
+const { session } = require('passport');
 
 
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
@@ -27,9 +28,23 @@ mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
 // });
 
 app.use(cookieSession({
+  name : session,
   maxAge:24*60*60*1000,
   keys: [keys.session.cookieKey]
 }));
+
+// app.get('/', (req, res) => {
+//   if (req.session.views) {
+//     req.session.views++;
+//     res.setHeader('Content-Type', 'text/html');
+//     res.write('<p>Number of views: ' + req.session.views + '</p>');
+//     res.write('<p>Expires in: ' + (req.session.cookie.maxAge / 1000) + 's</p>');
+//     res.end();
+//   } else {
+//     req.session.views = 1;
+//     res.end('Welcome to the session demo. Refresh page!');
+//   }
+// });
 
 //intialize passport
 app.use(passport.initialize());
