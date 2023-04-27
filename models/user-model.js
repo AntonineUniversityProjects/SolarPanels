@@ -3,10 +3,10 @@ const Schema =mongoose.Schema;
 
 const UserSchema = new Schema({
 
-    email:String,
-    picture:String,
+   
     username:String,
-    googleId:String
+    googleId:String,
+    thumbnail:String
 });
 
 const User = mongoose.model('users',UserSchema);
