@@ -10,16 +10,23 @@
     "type": "git",
     "url": "git+https://github.com/AntonineUniversityProjects/SolarPanels.git"
   },
-  "authors":[
 
-
+  "servers": {
+    "type": "web",
+    "name": [
+      "Nginx",
+      "Nodejs",
+      "php"
+    ]
+  },
+  
+  "authors": [
     {
       "login": "AbbasHamyehGit",
       "name": "Abbas Hamyeh",
       "tfa_enabled": false,
       "is_public": false,
       "role": "Owner"
-      
     },
     {
       "login": "Roygebrayel",
@@ -27,7 +34,6 @@
       "tfa_enabled": false,
       "is_public": false,
       "role": "Owner"
-      
     }
   ],
   "license": "MIT",
@@ -45,6 +51,5 @@
     "nodemon": "^2.0.22",
     "passport": "^0.5.3",
     "passport-google-oauth20": "^2.0.0"
-    
   }
 }
