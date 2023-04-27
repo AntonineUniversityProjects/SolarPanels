@@ -10,7 +10,7 @@ const { session } = require('passport');
 
 
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
-mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
+mongoose.connect("mongodb+srv://roygebrayel:313@solarpanels-login.oiy6gcx.mongodb.net/?retryWrites=true&w=majority" ,{dbName: 'solarpanels-login',
   useNewUrlParser: true,
   useUnifiedTopology: true})
   .then(() => {
