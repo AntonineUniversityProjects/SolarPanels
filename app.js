@@ -1,6 +1,6 @@
 const express = require('express');
 const authRoutes = require('./routes/auths-routes');
-const profileRoutes = require('./routes/profile-routes');
+const homeRoutes = require('./routes/home-routes');
 const app = express();
 const keys = require('./config/keys');
 const passportSetup = require('./config/passport-setup');
@@ -11,7 +11,7 @@ const { session } = require('passport');
 
 
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
-mongoose.connect("mongodb+srv://roygebrayel:313@solarpanels-login.oiy6gcx.mongodb.net/?retryWrites=true&w=majority" ,{dbName: 'solarpanels-login',
+mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
   useNewUrlParser: true,
   useUnifiedTopology: true})
   .then(() => {
@@ -56,7 +56,7 @@ app.set('view engine','ejs');
 
 // set up routes
 app.use('/auth',authRoutes);
-app.use('/profile',profileRoutes);
+app.use('/home',homeRoutes);
 
 app.get('/',(req,res)=>{
 res.render('login');
