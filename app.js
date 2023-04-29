@@ -8,6 +8,37 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 const { session } = require('passport');
+const ejs = require('ejs');
+
+// Set the EJS options, including the async flag
+const options = {
+  async: true
+};
+
+// Compile the EJS template with the options
+ejs.compile(/views/login.ejs, options);
+// const multer = require('multer');
+// const upload = multer({ dest: '/images' });
+// const fs = require('fs');
+
+
+
+
+
+// app.post('/images', upload.single('logo'), function (req, res) {
+//   // req.file contains information about the uploaded photo
+//   res.send('Photo uploaded successfully');
+// });
+
+// fs.readFile('/images/logo.jpg', function (err, data) {
+
+
+//   // Encode the photo as a Base64 string
+//   const base64Data = Buffer.from(data).toString('base64');
+
+//   // Pass the base64Data variable to the EJS template
+//   res.render('login', { photoData: base64Data });
+// });
 
 
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
@@ -27,7 +58,7 @@ mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
 //     const name = req.body.name;
 //     const email = req.body.email;
 // });
-app.use(express.static(path.join (__dirname, 'images')));
+
 
 app.use(cookieSession({
   name : session,
