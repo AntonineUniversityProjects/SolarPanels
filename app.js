@@ -11,12 +11,15 @@ const { session } = require('passport');
 const ejs = require('ejs');
 
 // Set the EJS options, including the async flag
-const options = {
-  async: true
-};
+
+// const options = {
+//   async: true
+// };
 
 // Compile the EJS template with the options
-ejs.compile(/views/login.ejs, options);
+
+// ejs.compile(/views/login.ejs, options);
+
 // const multer = require('multer');
 // const upload = multer({ dest: '/images' });
 // const fs = require('fs');
