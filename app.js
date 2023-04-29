@@ -20,8 +20,6 @@ const path = require('path');
 // Compile the EJS template with the options
 
 // ejs.compile(/views/login.ejs, options);
-
-// const multer = require('multer');
 // const upload = multer({ dest: '/images' });
 // const fs = require('fs');
 
@@ -91,6 +89,8 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+app.use(express.static(__dirname +'/public'))
 //set up view engine
 app.set('view engine','ejs');
 
