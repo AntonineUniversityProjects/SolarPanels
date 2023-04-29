@@ -27,6 +27,7 @@ mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
 //     const name = req.body.name;
 //     const email = req.body.email;
 // });
+app.use(express.static(path.join (__dirname, 'images')));
 
 app.use(cookieSession({
   name : session,
