@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 const { session } = require('passport');
-const ejs = require('ejs');
+//const ejs = require('ejs');
 
 // Set the EJS options, including the async flag
 
