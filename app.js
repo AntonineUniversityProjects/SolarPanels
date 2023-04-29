@@ -61,7 +61,7 @@ mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
 //     const email = req.body.email;
 // });
 
-app.set('logo',(__dirname, 'logo'));
+
 
 
 
