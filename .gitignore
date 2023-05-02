@@ -1,2 +1,5 @@
 node_modules
 # /config/keys.js
+# vendor
+# composer.lock
+# package-lock.json
