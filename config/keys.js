@@ -6,6 +6,7 @@ module.exports = {
     },
     mongodb:{
          dbauth:"mongodb+srv://roygebrayel:313@solarpanels-login.oiy6gcx.mongodb.net/?retryWrites=true&w=majority",
+        
     
     },
     session:{
