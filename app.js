@@ -101,7 +101,13 @@ app.use('/home',homeRoutes);
 app.get('/', (req, res) => {
   const images = ['/images/logo.jpg'];
   res.render('login', { images });
+
 });
+app.get('/home', (req, res) => {
+  const imagess = ['/assets/images/logo.jpg'];
+  res.render('home', { imagess });
+});
+
 
 
 app.listen(3000,() => {
