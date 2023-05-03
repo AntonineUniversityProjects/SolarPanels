@@ -1,5 +1,6 @@
 <?php
 
+
 require 'vendor/autoload.php'; // include Composer's autoloader
 
 // connect to the MongoDB server
@@ -17,4 +18,4 @@ $collection->insertOne($document);
 var_dump($collection->getInsertedId);
 
 
-?>
+// ?>

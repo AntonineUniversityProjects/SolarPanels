@@ -1,57 +1,12 @@
 {
-  "name": "solarpanels",
-  "version": "1.0.5",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AntonineUniversityProjects/SolarPanels.git"
-  },
-  "servers": {
-    "type": "web",
-    "name": [
-      "Nginx",
-      "Nodejs",
-      "php"
-    ]
-  },
-  "authors": [
-    {
-      "login": "AbbasHamyehGit",
-      "name": "Abbas Hamyeh",
-      "tfa_enabled": false,
-      "is_public": false,
-      "role": "Owner"
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
     },
-    {
-      "login": "Roygebrayel",
-      "name": "roy.gebrayel",
-      "tfa_enabled": false,
-      "is_public": false,
-      "role": "Owner"
+    "devDependencies": {
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.2",
+        "vite": "^4.0.0"
     }
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AntonineUniversityProjects/SolarPanels/issues"
-  },
-  "homepage": "https://github.com/AntonineUniversityProjects/SolarPanels#readme",
-  "dependencies": {
-    "composer": "^4.1.0",
-    "cookie-session": "^2.0.0",
-    "ejs": "^3.1.9",
-    "ejs-lint": "^2.0.0",
-    "express": "^4.18.2",
-    "mongodb": "^5.3.0",
-    "mongoose": "^7.0.5",
-    "multer": "^1.4.5-lts.1",
-    "node-semver": "^1.0.0",
-    "nodemon": "^2.0.22",
-    "passport": "^0.5.3",
-    "passport-google-oauth20": "^2.0.0",
-    "path": "^0.12.7"
-  }
 }
