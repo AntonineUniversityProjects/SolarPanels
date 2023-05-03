@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 const { session } = require('passport');
-const path = require('path');
+// const path = require('path');
 //const ejs = require('ejs');
 
 // Set the EJS options, including the async flag
@@ -102,6 +102,7 @@ app.get('/', (req, res) => {
   const images = ['/images/logo.jpg'];
   res.render('login', { images });
 });
+
 
 app.listen(3000,() => {
     console.log('app now listening for requests on port 3000');
