@@ -90,7 +90,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-app.use(express.static(__dirname +'/assets'))
+// app.use(express.static(__dirname +'/assets'))
+app.use(express.static('./assets'));
 //set up view engine
 app.set('view engine','ejs');
 

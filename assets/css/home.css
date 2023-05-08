@@ -1,7 +1,5 @@
-/* *,*:after,*:before{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
+*,*:after,*:before{
+
 	box-sizing: border-box;
 }
 body{
@@ -64,4 +62,4 @@ header{
 .scroll_section{
 	padding: 30px 0
 }
- */
+

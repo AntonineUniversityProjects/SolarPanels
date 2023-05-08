@@ -1,6 +1,17 @@
-# Use an official Nginx runtime as a parent image
-FROM nginx
+FROM node:latest
 
-# Copy the Nginx configuration file to the container
-COPY nginx.conf /etc/nginx/nginx.conf
+WORKDIR /app
+
+COPY package*.json ./
+
+COPY . .
+
+RUN npm install
+
+ENV PORT = 3000
+
+EXPOSE 3000
+
+CMD [ "npm" , "start" ]
+
 
