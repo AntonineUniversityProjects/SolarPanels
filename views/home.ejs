@@ -4,10 +4,168 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 <title>Home</title>
-<link rel="stylesheet" type="text/css" href="css/home.css">
-<script src="/assets/js/homee.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+
+<style>
+
+	*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	font-size: 20px;
+	margin: 0;
+	background: #0f4dff;
+	background: #003ce9;
+	background: #0276ad;
+	background: #fff;
+	color: #222;
+}
+
+header{
+	background: #003046;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.tabs_nav{
+	background: #0572a5;
+}
+.tabs_nav.fixed{
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 1000
+}
+.tabs_nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.tabs_nav ul li{
+	display: inline-block;
+}
+.tabs_nav ul li a{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	font-size: 17px;
+	transition: all 0.3s ease-in-out; 
+}
+.tabs_nav ul li:hover a,.tabs_nav ul li.active a{
+	background: #fff;
+	color: #0572a5;
+}
+
+.scroll_section{
+	padding: 30px 0
+}
+
+
+
+.home {
+  background-image: url("/assets/images/solar.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+ 
+  background-size: cover;
+  text-align: center;
+}
+
+.home h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 150px;
+  color: white;
+  padding-top: 10%;
+}
+
+.home p {
+  color: white;
+}
+
+
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    border: 6px;
+
+}
+
+.image {
+    margin-top: 20px;
+    position: relative;
+    width: 400px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-sell {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.image-sell-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    cursor: pointer;
+}
+
+.image-sell-overlay:hover {
+    opacity: 1;
+}
+
+.image-desc {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+</style>
 
 <div class="header-height"></div>
 
@@ -26,9 +184,10 @@
 
 <section class="home" id="home">
 	<div class="container">
-		<h1>Make Memories</h1>
-		<p>Discover the place where you have fun & enjoy a lot</p>
-	
+		<h1>Make electricity<i class="fa fa-light"></i></h1>
+		
+
+		
 		</div>
 	</div>
 </section>
@@ -42,17 +201,17 @@
 <div class="services">
 	<h1>Services We Offer</h1>
 	<div class="image">
-		<a href="/HTML/DriverReg.html"><img class="image-sell" src="/photos/carRace.jpg" class="sell " alt="Sell cars">
+		<a href="/HTML/DriverReg.html"><img class="image-sell" src="/assets/images/solar.jpg" class="sell " alt="Sell cars">
 			<div class="image-sell-overlay">
-				<p class="image-desc">Register as a driver</p>
+				<p class="image-desc">Buy a solar panel</p>
 			</div>
 		</a>
 	</div>
 	<div class="image">
-		<a href="/HTML/ViewerReg.html"><img class="image-sell" src="/photos/imag.jpg" class="sell "
+		<a href="/HTML/ViewerReg.html"><img class="image-sell" src="/assets/images/maintenanace.jpeg" class="sell "
 				alt="Buy accessories cars">
 			<div class="image-sell-overlay">
-				<p class="image-desc">Register as a viewer</p>
+				<p class="image-desc">maintenanace</p>
 			</div>
 		</a>
 	</div>
