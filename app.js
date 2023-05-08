@@ -104,9 +104,9 @@ app.get('/', (req, res) => {
   res.render('login', { images });
 
 });
-app.get('/home', (req, res) => {
+app.get('/gallery', (req, res) => {
   const imagess = ['/assets/images/logo.jpg'];
-  res.render('home', { imagess });
+  res.render('gallery', { imagess });
 });
 
 
