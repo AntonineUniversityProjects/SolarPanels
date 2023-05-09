@@ -11,7 +11,8 @@ const authCheck = (req, res, next) => {
 
 
 router.get('/', (req, res) => {
-    res.render('home', { user: req.user });
+    //  const images = ['images/logo.jpg'];
+    res.render('home', { user: req.user }  );
 });
 
 module.exports = router;

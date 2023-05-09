@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 <title>Home</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <style>
 
 	*,*:after,*:before{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
+	
 	box-sizing: border-box;
 }
 body{
@@ -194,6 +194,31 @@ header{
 </section>
 
 
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="#" alt="First slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/maintenanace.jpeg" alt="Second slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="images/solar.jpg" alt="Third slide">
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+
 <!--  section about the services we provide -->
 
 
@@ -201,16 +226,19 @@ header{
 <div class="services">
 	<h1>Services We Offer</h1>
 	<div class="image">
-		<a href="/HTML/DriverReg.html"><img class="image-sell" src="/assets/images/solar.jpg" class="sell " alt="Sell cars">
+		<a href="/HTML/DriverReg.html"><img class="image-sell" src="images/solar.jpg" class="sell " alt="Sell cars">
 			<div class="image-sell-overlay">
 				<p class="image-desc">Buy a solar panel</p>
 			</div>
 		</a>
 	</div>
 	<div class="image">
-		<a href="/HTML/ViewerReg.html"><img class="image-sell" src="/assets/images/maintenanace.jpeg" class="sell "
-				alt="Buy accessories cars">
-			<div class="image-sell-overlay">
+		<a href="/HTML/ViewerReg.html">
+			<!-- <img class="image-sell" src="/assets/images/maintenanace.jpeg" class="sell "
+				alt="Buy accessories cars"> -->
+
+			
+				<div class="image-sell-overlay">
 				<p class="image-desc">maintenanace</p>
 			</div>
 		</a>

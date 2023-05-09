@@ -90,7 +90,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// app.use(express.static(__dirname +'/assets'))
+// app.use(express.static(__dirname +'/assets'))    '/images/maintenanace.jpeg' , '/images/solar.jpg'
 app.use(express.static('./assets'));
 //set up view engine
 app.set('view engine','ejs');
@@ -101,13 +101,14 @@ app.use('/home',homeRoutes);
 
 app.get('/', (req, res) => {
   const images = ['/images/logo.jpg'];
-  res.render('login', { images });
+  // res.render('login', { images });
+  res.render('login',{images});
 
 });
-app.get('/gallery', (req, res) => {
-  const imagess = ['/assets/images/logo.jpg'];
-  res.render('gallery', { imagess });
-});
+// app.get('/gallery', (req, res) => {
+//   const imagess = ['/assets/images/logo.jpg'];
+//   res.render('gallery', { imagess });
+// });
 
 
 
