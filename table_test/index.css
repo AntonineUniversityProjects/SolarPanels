@@ -32,7 +32,14 @@ button {
 	padding: 8px 16px;
 	border: none;
 	cursor: pointer;
+
 }
+.button-wrapper {
+	display: flex;
+	justify-content: space-between;
+
+  }
+  
 
 button:hover {
 	background-color: #3e8e41;
