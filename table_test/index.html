@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <td><input type="text" name="product_name"></td> -->
+                    <td>
+                        <input type="checkbox" name="product_name" value="option1"> solar panel<br>
+                        <input type="checkbox" name="product_name" value="option2">battery<br>
+                        <input type="checkbox" name="product_name" value="option3"> inverter<br>
+                      </td>
+                      
+                    <td><input type="number" name="quantity"></td>
+                    <td><input type="number" name="Price"></td>
+                    <td><button class="delete-row">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="add-row">Add Row</button>
+    
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  
+    <button id="update-price-button">Update Price</button>
+
+<script>
+  var updatePriceButton = document.getElementById("update-price-button");
+
+  updatePriceButton.addEventListener("click", function() {
+    updatePrice();
+  });
+  // get the quantity input element
+function updatePrice(){
+const quantityInput = document.querySelector('input[name="quantity"]');
+
+// add event listener to the quantity input
+quantityInput.addEventListener('input', () => {
+  // get the selected checkbox value
+  const selectedCheckbox = document.querySelector('input[name="product_name"]:checked').value;
+
+  // calculate the price based on the selected checkbox and the quantity entered
+  let price = 0;
+  if (selectedCheckbox === 'option1') {
+    price = 10;
+  } else if (selectedCheckbox === 'option2') {
+    price = 20;
+  } else if (selectedCheckbox === 'option3') {
+    price = 30;
+  }
+  price *= quantityInput.value;
+
+  // update the price input value with the calculated price
+  const priceInput = document.querySelector('input[name="Price"]');
+  priceInput.value = price;
+});
+}
+
+</script>
+
+</body>
+
+</html>
