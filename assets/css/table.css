@@ -52,8 +52,6 @@ button:hover {
 	text-align: right;
 }
 
-	.container {
-		margin-bottom: 1000px;
-	  }
-	  
-	
+.container {
+	margin-top: 1000px;
+}

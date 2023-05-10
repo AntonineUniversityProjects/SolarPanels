@@ -115,10 +115,10 @@ app.get('/table', (req, res) => {
 });
 
 
-// app.get('/gallery', (req, res) => {
-//   const imagess = ['/assets/images/logo.jpg'];
-//   res.render('gallery', { imagess });
-// });
+app.get('/gallery', (req, res) => {
+  
+  res.render('gallery');
+});
 
 
 

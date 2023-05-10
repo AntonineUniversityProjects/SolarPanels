@@ -1,0 +1,67 @@
+.mainp {
+
+
+    max-width: 2000px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.product {
+
+    display: inline-block;
+    background-color: #333;
+    width: 300px;
+    padding: 40px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
+
+.product img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.product a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product a:hover {
+
+    background-color: deeppink;
+    color: black;
+    text-decoration: none;
+
+
+}
+
+.product img:hover {
+
+    opacity: 0.5;
+}
+
+@media screen and (max-width : 600px) {
+    .product {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+
+    }
+
+    .product img {
+        margin-bottom: 20px;
+    }
+
+}
