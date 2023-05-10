@@ -3,1110 +3,1229 @@
 
 
 <head>
-  <title>Hotel Booking Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hotel Booking Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-  <link href="style1.css" rel="stylesheet">
-  <link href="footer.css" rel="stylesheet">
-  <script type="text/javascript" src="script.js"></script>
+	<link href="style1.css" rel="stylesheet">
+	<link href="footer.css" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
 
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <!-- 
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	<!-- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-     
+
 
 </head>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-	
+
 	* {
-	  padding: 0;
-	  margin: 0;
-	  box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
 	}
-	.space{
-	margin-bottom:30px;
+
+	.space {
+		margin-bottom: 30px;
 	}
+
 	#padding {
-	  width: 700px;
-	  height: 500px;
-	  padding-right: 200px;
-	  padding-top: 50px;
-	  padding-left: 20px;
+		width: 700px;
+		height: 500px;
+		padding-right: 200px;
+		padding-top: 50px;
+		padding-left: 20px;
 	}
-	
+
 	body {
-	  font-family: 'Poppins', sans-serif;
-	  scroll-behavior: smooth;
+		font-family: 'Poppins', sans-serif;
+		scroll-behavior: smooth;
 	}
-	
+
 	.head img {
-	
-	position: absolute;
-	left: 2px;
-	width: 60px;
-	height: 60px;
+
+		position: absolute;
+		left: 2px;
+		width: 60px;
+		height: 60px;
 	}
-	
-	.address{
-	  padding-left: 1000px;
-	
+
+	.address {
+		padding-left: 1000px;
+
 	}
-	
+
 	.container {
-	  display: block;
-	  width: 100%;
-	  margin: auto;
+		display: block;
+		width: 100%;
+		margin: auto;
+
 	}
-	
+
+	.logo-container {
+		display: block;
+		width: 80px;
+		padding-top: 30px;
+
+
+	}
+
 	li {
-	  list-style: none;
+		list-style: none;
 	}
-	
+
 	a {
-	  text-decoration: none;
-	  transition: 0.5s;
+		text-decoration: none;
+		transition: 0.5s;
 	}
-	
+
 	.flex {
-	  display: flex;
+		display: flex;
 	}
-	
+
 	.flex1 {
-	  display: flex;
-	  justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
 	}
+
 	.flex2 {
-	  position: relative;
-	  width: 100%;
-	  height: 100%;
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
-	
+
 	/*-------------head--------- */
 	.head {
-	  height: 10vh;
-	  line-height: 10vh;
-	  
+		height: 10vh;
+		line-height: 10vh;
+
 	}
-	
+
 	.head i {
-	  width: 30px;
-	  height: 30px;
-	  border-radius: 50%;
-	  line-height: 30px;
-	  background: #FAF3E7;
-	  text-align: center;
-	  color: #CC8C18;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		line-height: 30px;
+		background: #FAF3E7;
+		text-align: center;
+		color: #CC8C18;
 	}
-	
+
 	.head img {
-	  margin-bottom: 10px;
+		margin-bottom: 10px;
 	}
-	
+
 	/*-------------head--------- */
 	/*-------------header--------- */
 	header {
-	  background: #CC8C18;
-	  padding: 15px 0 15px 0;
-	  color: white;
-	}
-	
-	.navbar {
-	  display: flex;
-	  align-items: center;
-	}
-	
-	
-	
-	.bar {
-	  display: block;
-	  width: 25px;
-	  height: 3px;
-	  margin: 5px auto;
-	  transition: all 0.5s ease-in-out;
-	  background: white;
-	}
-	
-	.nav-menu {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	}
-	
-	header ul {
-	  padding: 0 20px 0 0;
-	}
-	
-	header li {
-	  margin-right: 30px;
-	}
-	
-	header ul li a {
-	  font-size: 15px;
-	  color: white;
-	  text-transform: uppercase;
-	  font-weight: 500;
-	  transition: 0.5s;
-	}
-	
-	header ul li a:hover {
-	  color: #000;
-	}
-	
-	
-	
-	
-	@media only screen and (max-width:768px) {
-	
-	  /*------------head------------*/
-	  
-	  /*------------head------------*/
-	 
-	  .navbar {
-		height: 5vh;
-		justify-content: space-between;
-	  }
-	
-	  .nav-menu {
-	position: relative;
-		right: 50%;
-		top: 5rem;
-		flex-direction: column;
 		background: #CC8C18;
-		width: 100%;
-		border-radius: 10px;
-		text-align: center;
-		transition: 0.3s;
-		z-index: 99;
-	  }
-	
-	  
-	  header ul li a {
+		padding: 15px 0 15px 0;
 		color: white;
-	  }
-	
-	  .nav-menu{
-		right: 0;
-	  }
-	
-	  header li {
-		margin: 2.5rem 0;
-	  }
-	
-	 
 	}
-	
+
+	.navbar {
+		display: flex;
+		align-items: center;
+	}
+
+
+
+	.bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		transition: all 0.5s ease-in-out;
+		background: white;
+	}
+
+	.nav-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header ul {
+		padding: 0 20px 0 0;
+	}
+
+	header li {
+		margin-right: 30px;
+	}
+
+	header ul li a {
+		font-size: 15px;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 500;
+		transition: 0.5s;
+	}
+
+	header ul li a:hover {
+		color: #000;
+	}
+
+
+
+
+	@media only screen and (max-width:768px) {
+
+		/*------------head------------*/
+
+		/*------------head------------*/
+
+		.navbar {
+			height: 5vh;
+			justify-content: space-between;
+		}
+
+		.nav-menu {
+			position: relative;
+			right: 50%;
+			top: 5rem;
+			flex-direction: column;
+			background: #CC8C18;
+			width: 100%;
+			border-radius: 10px;
+			text-align: center;
+			transition: 0.3s;
+			z-index: 99;
+		}
+
+
+		header ul li a {
+			color: white;
+		}
+
+		.nav-menu {
+			right: 0;
+		}
+
+		header li {
+			margin: 2.5rem 0;
+		}
+
+
+	}
+
 	/*------------home------------*/
 	.grid {
-	  display: grid;
-	  grid-template-columns: repeat(5, 1fr);
-	  grid-gap: 30px;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 30px;
 	}
-	
+
 	.home {
-	  background-image: url("images/solar_background.jpg");
-	  height: 100vh;
-	  background-attachment: fixed;
-	  background-position: center;
-	 
-	  background-size: cover;
-	  text-align: center;
+		background-image: url("images/solar_background.jpg");
+		height: 100vh;
+		background-attachment: fixed;
+		background-position: center;
+
+		background-size: cover;
+		text-align: center;
 	}
-	
+
 	.home h1 {
-	  font-family: 'Great Vibes', cursive;
-	  font-size: 150px;
-	  color: white;
-	  padding-top: 10%;
+		font-family: 'Great Vibes', cursive;
+		font-size: 150px;
+		color: white;
+		padding-top: 10%;
 	}
-	
+
 	.home p {
-	  color: white;
+		color: white;
 	}
-	
+
 	.home .content {
-	  text-align: left;
-	  color: black;
-	  margin-top: 7%;
+		text-align: left;
+		color: black;
+		margin-top: 7%;
 	}
-	
+
 	.home .box {
-	  background: white;
-	  padding: 35px;
+		background: white;
+		padding: 35px;
 	}
-	
+
 	.home input {
-	  margin-top: 10px;
+		margin-top: 10px;
 	}
-	
+
 	input {
-	  border: none;
-	  outline: none;
+		border: none;
+		outline: none;
 	}
-	
+
 	button {
-	  background: #CC8C18;
-	  color: white;
-	  padding: 10px 20px;
-	  outline: none;
-	  border: none;
-	  border-radius: 30px;
+		background: #CC8C18;
+		color: white;
+		padding: 10px 20px;
+		outline: none;
+		border: none;
+		border-radius: 30px;
 	}
-	
+
 	button i {
-	  margin-left: 20px;
-	  font-size: 25px;
+		margin-left: 20px;
+		font-size: 25px;
 	}
-	
+
 	button span {
-	  margin-top: 5px;
+		margin-top: 5px;
 	}
-	
+
 	/*------------home------------*/
 	/*------------about------------*/
-	
-	
+
+
 	.heading {
-	  text-align: center;
+		text-align: center;
 	}
-	
+
 	.heading h5 {
-	  font-weight: 400;
-	  letter-spacing: 5px;
-	  color: #CC8C18;
-	  padding-top: 20px;
+		font-weight: 400;
+		letter-spacing: 5px;
+		color: #CC8C18;
+		padding-top: 20px;
 	}
-	
-	
+
+
 	.heading h2 {
-	  color: #24416B;
-	  font-size: 45px;
-	  font-family: serif;
-	  font-weight: bold;
-	  margin: 10px 0 20px 0;
-	  
+		color: #24416B;
+		font-size: 45px;
+		font-family: serif;
+		font-weight: bold;
+		margin: 10px 0 20px 0;
+
 	}
-	#as{
-	  color: #CC8C18;
+
+	#as {
+		color: #CC8C18;
 	}
-	
+
 	.left,
 	.right {
-	  
-	  width: 50%;
-	
-	  
+
+		width: 50%;
+
+
 	}
-	#ph{
-	  width: 800px;
+
+	#ph {
+		width: 800px;
 	}
-	
+
 	h3 {
-	  font-size: 35px;
-	  font-family: serif;
-	  color: #24416B;
-	  margin-bottom: 20px;
+		font-size: 35px;
+		font-family: serif;
+		color: #24416B;
+		margin-bottom: 20px;
 	}
-	
+
 	.about .left {
-	  padding: 20px;
+		padding: 20px;
 	}
-	
+
 	p {
-	  line-height: 30px;
-	  color: #a4a4a4;
-	  margin-bottom: 20px;
-	  font-size: 15px;
+		line-height: 30px;
+		color: #a4a4a4;
+		margin-bottom: 20px;
+		font-size: 15px;
 	}
-	
+
 	.about {
-	  position: relative;
-	  padding-bottom: 70px;
+		position: relative;
+		padding-bottom: 70px;
 	}
-	
+
 	.about .right {
-	  position: relative;
+		position: relative;
 	}
-	
+
 	/*------------about------------*/
 	/*------------wrapper------------*/
 	.wrapper {
-	  background-image: url(photos/aera.jpg);
-	  height: 80vh;
-	  background-attachment: fixed;
-	  background-position: center;
-	
-	  background-size: cover;
+		background-image: url(photos/aera.jpg);
+		height: 80vh;
+		background-attachment: fixed;
+		background-position: center;
+
+		background-size: cover;
 	}
-	
+
 	.wrapper .container {
-	  max-width: 50%;
-	  margin: auto;
+		max-width: 50%;
+		margin: auto;
 	}
-	
+
 	.wrapper .item {
-	  background: hsl(0, 0%, 100%);
-	  padding: 50px;
-	  margin-top: 15%;
-	  border: 30px solid #F3F3F3;
-	  border-bottom: none;
+		background: hsl(0, 0%, 100%);
+		padding: 50px;
+		margin-top: 15%;
+		border: 30px solid #F3F3F3;
+		border-bottom: none;
 	}
-	
+
 	.wrapper .heading {
-	  text-align: left;
+		text-align: left;
 	}
-	
+
 	.owl-nav .owl-next,
 	.owl-nav .owl-prev {
-	  height: 47px;
-	  position: absolute;
-	  top: 60%;
-	  width: 26px;
-	  cursor: pointer;
-	  background: none !important;
+		height: 47px;
+		position: absolute;
+		top: 60%;
+		width: 26px;
+		cursor: pointer;
+		background: none !important;
 	}
-	
+
 	.owl-nav .owl-prev {
-	  left: 0;
+		left: 0;
 	}
-	
+
 	.owl-nav .owl-next {
-	  right: 53px;
+		right: 53px;
 	}
-	
+
 	.owl-nav .owl-next i,
 	.owl-nav .owl-prev i {
-	  background: white;
-	  padding: 7px;
-	  border-radius: 50%;
-	  color: #CC8C18;
-	  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.05);
-	  transition: 0.5s;
+		background: white;
+		padding: 7px;
+		border-radius: 50%;
+		color: #CC8C18;
+		box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.05);
+		transition: 0.5s;
 	}
-	
+
 	.owl-nav .owl-next i:hover,
 	.owl-nav .owl-prev i:hover {
-	  background: #CC8C18;
-	  color: white;
+		background: #CC8C18;
+		color: white;
 	}
-	
+
 	/*------------wrapper------------*/
-	
+
 	.wrapper2 {
-	  position: relative;
-	  text-align: center;
+		position: relative;
+		text-align: center;
 	}
+
 	.wrapper2 .grid {
-	  grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
-	
-	
+
+
 	.wrapper2 .box {
-	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
-	  padding: 20px;
-	  transition: 0.5s;
+		box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+		padding: 20px;
+		transition: 0.5s;
 	}
-	
+
 	.wrapper2 i {
-	  margin: 10px 0 15px 0;
-	  color: #CC8C18;
-	  font-size: 30px;
+		margin: 10px 0 15px 0;
+		color: #CC8C18;
+		font-size: 30px;
 	}
-	
+
 	.wrapper2 h3 {
-	  font-size: 20px;
+		font-size: 20px;
 	}
-	
+
 	.wrapper2 span {
-	  padding: 10px;
-	  background: #F5E8D1;
-	  color: #CC8C18;
-	  border-radius: 50%;
+		padding: 10px;
+		background: #F5E8D1;
+		color: #CC8C18;
+		border-radius: 50%;
 	}
-	
+
 	.wrapper2 .box:hover {
-	  background: #CC8C18;
-	  cursor: pointer;
+		background: #CC8C18;
+		cursor: pointer;
 	}
-	
+
 	.wrapper2 .box:hover span {
-	  background: #fff;
+		background: #fff;
 	}
-	
+
 	.wrapper2 .box:hover p,
 	.wrapper2 .box:hover h3,
 	.wrapper2 .box:hover i {
-	  color: white;
+		color: white;
 	}
-	
-	
-	
+
+
+
 	/*------------wrapper2------------*/
-	
+
 	/*------------timer------------*/
 	.timer {
-	  position: relative;
-	  text-align: center;
-	  padding-top: 12%;
+		position: relative;
+		text-align: center;
+		padding-top: 12%;
 	}
-	
+
 	.timer.wrapper {
-	  background-image: url("photos/Zahle\,Lebanon.jpg");
+		background-image: url("photos/Zahle\,Lebanon.jpg");
 	}
-	
-	
-	
+
+
+
 	/*------------timer------------*/
-	
+
 	/*------------room------------*/
 	.room {
-	  margin-bottom: 50px;
-	  position: relative;
+		margin-bottom: 50px;
+		position: relative;
 	}
-	
+
 	.grid2 {
-	  display: grid;
-	  grid-template-columns: repeat(2, 1fr);
-	  grid-gap: 30px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
 	}
-	
-	
+
+
 	.room h3 {
-	  margin: 0;
-	  padding: 0;
+		margin: 0;
+		padding: 0;
 	}
-	
+
 	/*------------room------------*/
-	
+
 	/*------------offer------------*/
 	.offer img {
-	  width: 100%;
-	  height: 100%;
+		width: 100%;
+		height: 100%;
 	}
-	
+
 	.offer .right {
-	  padding: 20px;
-	  margin: 20px;
-	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+		padding: 20px;
+		margin: 20px;
+		box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
 	}
-	
+
 	.offer .content h4 {
-	  font-size: 20px;
-	  color: #627795;
-	  font-family: serif;
+		font-size: 20px;
+		color: #627795;
+		font-family: serif;
 	}
-	
+
 	.offer .rate i {
-	  font-size: 13px;
-	  color: #CC8C18;
-	  margin: 10px 10px 20px 0;
+		font-size: 13px;
+		color: #CC8C18;
+		margin: 10px 10px 20px 0;
 	}
-	
+
 	.offer .content h5 {
-	  color: #627795;
-	  margin-bottom: 10px;
+		color: #627795;
+		margin-bottom: 10px;
 	}
-	
+
 	.offer .box {
-	  transition: 0.5s;
+		transition: 0.5s;
 	}
-	
+
 	.offer .box:hover {
-	  transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
-	
+
 	/*------------offer------------*/
 	/*------------area------------*/
 	.area img {
-	  margin: 0px 0 20px 80px;
+		margin: 0px 0 20px 80px;
 	}
-	
+
 	.area ul li {
-	  display: inline-block;
-	  font-weight: 500;
-	  color: #5c646e;
-	  margin-right: 20px;
-	  margin-bottom: 20px;
+		display: inline-block;
+		font-weight: 500;
+		color: #5c646e;
+		margin-right: 20px;
+		margin-bottom: 20px;
 	}
-	
+
 	.area .left {
-	  position: relative;
+		position: relative;
 	}
-	
+
 	.area .left::after {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  content: '';
-	  width: 85%;
-	  height: 92%;
-	  margin: 30px;
-	  background: #CC8C18;
-	  z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 85%;
+		height: 92%;
+		margin: 30px;
+		background: #CC8C18;
+		z-index: -1;
 	}
-	
+
 	/*------------area------------*/
-	
+
 	/*------------customer------------*/
 	.customer .mtop {
-	  padding: 30px;
-	  max-width: 60%;
-	  margin: auto;
-	  text-align: center;
-	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+		padding: 30px;
+		max-width: 60%;
+		margin: auto;
+		text-align: center;
+		box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
 	}
-	
-	.customer i {
-	  color: #CC8C18;
-	  font-size: 13px;
-	}
-	
-	.customer .item h3 {
-	  font-size: 20px;
-	}
-	
-	.customer img {
-	  width: 70px;
-	  height: 70px;
-	  border-radius: 50%;
-	}
-	
-	.customer .admin {
-	  justify-content: center;
-	}
-	
-	.customer .admin h3 {
-	  margin: 0;
-	}
-	
-	.customer .text {
-	  margin: 10px;
-	}
-	
-	.customer span {
-	  opacity: 0.7;
-	}
-	
-	/*------------customer------------*/
-	
-	.item {
-	  position: relative;
-	  cursor: pointer;
-	}
-	
-	 .overlay i {
-	  position: absolute;
-	  top: 40%;
-	  left: 40%;
-	  z-index: 1;
-	  opacity: 0;
-	  font-size: 50px;
-	  color: white;
-	}
-	
-	 .overlay {
-	  position: absolute;
-	  content: '';
-	  background: rgba(204, 140, 24, 0.73);
-	  width: 100%;
-	  height: 100%;
-	  top: 0;
-	  left: 0;
-	  opacity: 0;
-	}
-	
-	 .item:hover .overlay,
-	 .item:hover i {
-	  opacity: 1;
-	  transition: 0.5s;
-	  cursor: pointer;
-	}
-	
-	
-	
-	
-	
-	/*------------map------------*/
-	
-	.map iframe {
-	  width: 100%;
-	}
-	
-	/*------------map------------*/
-	
-	
-	
 
-	footer{
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background: #111;
-    
-  
-  }
-  footer .content{
-    max-width: 1350px;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  footer .content p,a{
-    color: #fff;
-  }
-  footer .content .box{
-    width: 33%;
-    transition: all 0.4s ease;
-  }
-  footer .content .topic{
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 16px;
-  
-  }
-  footer .content p{
-    text-align: justify;
-  }
-  footer .content .lower .topic{
-    margin: 24px 0 5px 0;
-  }
-  footer .content .lower i{
-    padding-right: 16px;
-  }
-  footer .content .middle{
-    padding-left: 80px;
-  }
-  footer .content .middle a{
-    line-height: 32px;
-  }
-  footer .content .right input[type="text"]{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    color: #d9d9d9;
-    background: #000;
-    border-radius: 5px;
-    padding-left: 10px;
-    font-size: 17px;
-    border: 2px solid #222222;
-  }
-  footer .content .right input[type="submit"]{
-    height: 42px;
-    width: 100%;
-    font-size: 18px;
-    color: #d9d9d9;
-    background: #eb2f06;
-    outline: none;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-top: 12px;
-    border: 2px solid #eb2f06;
-    transition: all 0.3s ease-in-out;
-  }
-  .content .right input[type="submit"]:hover{
-    background: none;
-    color:  #eb2f06;
-  }
-  footer .content .media-icons a{
-    font-size: 16px;
-    height: 45px;
-    width: 45px;
-    display: inline-block;
-    text-align: center;
-    line-height: 43px;
-    border-radius: 5px;
-    border: 2px solid #222222;
-    margin: 30px 5px 0 0;
-  
-  }
-  .content .media-icons a:hover{
-    border-color: #eb2f06;
-  }
-  footer .bottom{
-    width: 100%;
-    text-align: right;
-    color: #d9d9d9;
-    padding: 0 40px 5px 0;
-  }
-  footer .bottom a{
-    color: #eb2f06;
-  }
-  footer a{
-    transition: all 0.3s ease;
-  }
-  footer a:hover{
-    color: #eb2f06;
-  }
-  @media (max-width:1100px) {
-    footer .content .middle{
-      padding-left: 50px;
-    }
-  }
-  @media (max-width:950px){
-    footer .content .box{
-      width: 50%;
-    }
-    .content .right{
-      margin-top: 40px;
-    }
-  }
-  @media (max-width:560px){
-    footer{
-      position: relative;
-    }
-    footer .content .box{
-      width: 100%;
-      margin-top: 30px;
-    }
-    footer .content .middle{
-      padding-left: 0;
-    }
-  }
-  
-	</style>
+	.customer i {
+		color: #CC8C18;
+		font-size: 13px;
+	}
+
+	.customer .item h3 {
+		font-size: 20px;
+	}
+
+	.customer img {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+
+	.customer .admin {
+		justify-content: center;
+	}
+
+	.customer .admin h3 {
+		margin: 0;
+	}
+
+	.customer .text {
+		margin: 10px;
+	}
+
+	.customer span {
+		opacity: 0.7;
+	}
+
+	/*------------customer------------*/
+
+	.item {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.overlay i {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		z-index: 1;
+		opacity: 0;
+		font-size: 50px;
+		color: white;
+	}
+
+	.overlay {
+		position: absolute;
+		content: '';
+		background: rgba(204, 140, 24, 0.73);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+
+	.item:hover .overlay,
+	.item:hover i {
+		opacity: 1;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+
+
+
+
+
+	/*------------map------------*/
+
+	.map iframe {
+		width: 100%;
+	}
+
+	/*------------map------------*/
+
+
+
+
+	footer {
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background: #111;
+
+
+	}
+
+	footer .content {
+		max-width: 1350px;
+		margin: auto;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	footer .content p,
+	a {
+		color: #fff;
+	}
+
+	footer .content .box {
+		width: 33%;
+		transition: all 0.4s ease;
+	}
+
+	footer .content .topic {
+		font-size: 22px;
+		font-weight: 600;
+		color: #fff;
+		margin-bottom: 16px;
+
+	}
+
+	footer .content p {
+		text-align: justify;
+	}
+
+	footer .content .lower .topic {
+		margin: 24px 0 5px 0;
+	}
+
+	footer .content .lower i {
+		padding-right: 16px;
+	}
+
+	footer .content .middle {
+		padding-left: 80px;
+	}
+
+	footer .content .middle a {
+		line-height: 32px;
+	}
+
+	footer .content .right input[type="text"] {
+		height: 45px;
+		width: 100%;
+		outline: none;
+		color: #d9d9d9;
+		background: #000;
+		border-radius: 5px;
+		padding-left: 10px;
+		font-size: 17px;
+		border: 2px solid #222222;
+	}
+
+	footer .content .right input[type="submit"] {
+		height: 42px;
+		width: 100%;
+		font-size: 18px;
+		color: #d9d9d9;
+		background: #eb2f06;
+		outline: none;
+		border-radius: 5px;
+		letter-spacing: 1px;
+		cursor: pointer;
+		margin-top: 12px;
+		border: 2px solid #eb2f06;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.content .right input[type="submit"]:hover {
+		background: none;
+		color: #eb2f06;
+	}
+
+	footer .content .media-icons a {
+		font-size: 16px;
+		height: 45px;
+		width: 45px;
+		display: inline-block;
+		text-align: center;
+		line-height: 43px;
+		border-radius: 5px;
+		border: 2px solid #222222;
+		margin: 30px 5px 0 0;
+
+	}
+
+	.content .media-icons a:hover {
+		border-color: #eb2f06;
+	}
+
+	footer .bottom {
+		width: 100%;
+		text-align: right;
+		color: #d9d9d9;
+		padding: 0 40px 5px 0;
+	}
+
+	footer .bottom a {
+		color: #eb2f06;
+	}
+
+	footer a {
+		transition: all 0.3s ease;
+	}
+
+	footer a:hover {
+		color: #eb2f06;
+	}
+
+	@media (max-width:1100px) {
+		footer .content .middle {
+			padding-left: 50px;
+		}
+	}
+
+	@media (max-width:950px) {
+		footer .content .box {
+			width: 50%;
+		}
+
+		.content .right {
+			margin-top: 40px;
+		}
+	}
+
+	@media (max-width:560px) {
+		footer {
+			position: relative;
+		}
+
+		footer .content .box {
+			width: 100%;
+			margin-top: 30px;
+		}
+
+		footer .content .middle {
+			padding-left: 0;
+		}
+	}
+
+
+
+
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
+		background-color: #333;
+		padding: 20px;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo img {
+		max-width: 100px;
+	}
+
+	.menu {
+		list-style-type: none;
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu li {
+		margin-right: 20px;
+	}
+
+	.menu li a {
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+		transition: color 0.3s;
+	}
+
+	.menu li a:hover {
+		color: #ffcc00;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #6889c5;
+		padding: 20px;
+	}
+
+	.logo {
+		object-fit: contain;
+	}
+
+	.logo img {
+
+		max-height: 60px;
+		object-fit: fill;
+	}
+
+	.nav-links {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-links li {
+		margin: 0 10px;
+	}
+
+	.nav-links li a {
+		color: #333;
+		text-decoration: none;
+		font-weight: bold;
+		padding: 10px;
+	}
+
+	.nav-links li a:hover {
+		color: #f2f2f2;
+		background-color: #333;
+	}
+</style>
 
 <body>
 
 
-  
-
-
-
-  <header class="header">
-	<section class="head">
-
-		<div class="container flex1">
-		  <img src="images/logo.jpg" alt="a logo about solar panels">
-	
+	<nav>
+		<div class="logo">
+		<a href="home"><img src="images/logo.png" alt="Your Logo"></a>
+			
 		</div>
+		<ul class="nav-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<section class="home" id="home">
+		<div class="container">
+			<h1>Make Memories</h1>
+			<p>Discover the place where you have fun & enjoy a lot</p>
+
 		</div>
-	  </section>
-	
- 
-      <nav class="navbar flex1">
+	</section>
+
+	<div class="img">
+		<section class="wrapper">
+			<div class="container">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="heading">
+							<h5>THE CITY VIEW</h5>
+							<h3>A charming view of the city</h3>
+						</div>
+						<p> When I have a chance to go back to my village, I always remind myself where I came from.
+							it's about my identity a piece of quit thoughts </p>
+						<p> having to visit zahle is a must specially with the beautifull old houses who reminds you on
+							lebanese
+							culture</p>
+					</div>
+					<div class="item">
+						<div class="heading">
+							<h5>THE CITY VIEW</h5>
+							<h3>A charming view of the city</h3>
+						</div>
+						<p> Zahle is about the beauty of its people, their kindness, their hope into the future and to a
+							better
+							place </p>
+						<p> you will be gratefull when visiting Zahle specially when introducing to its dialect and most
+							importantantly its hotels ... </p>
+					</div>
+					<div class="item">
+						<div class="heading">
+							<h5>THE CITY VIEW</h5>
+							<h3>A charming view of the city</h3>
+						</div>
+						<p> Zahle is known for its wine caves one of them is Ksara Castle known for its sugar taste </p>
+						<p> While entering zahle you'll be grated with a status of a symbolic lady holdng a bunch of
+							Grapes</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: true,
+				dots: false,
+				navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
+				}
+			})
+		</script>
+		<section class="wrapper2">
+			<div class="container">
+				<div class="heading mtop">
+					<h5>FACILITIES</h5>
+					<h2>Giving entirely awesome </h2>
+				</div>
+				<div class="content grid mtop">
+					<div class="box">
+						<i class="fas fa-shipping-fast"></i>
+						<h3>Pick Up & Drop</h3>
+						<p> do not worry, our 24/7 taxi services is ready to pick you up whenever you need</p>
+						<span class='far fa-long-arrow-alt-right'></span>
+					</div>
+					<div class="box">
+						<i class="fas fa-mug-hot"></i>
+						<h3>Sipping Cofee</h3>
+						<p> As your working or thinking our Coffees places are nice to hangouts and work </p>
+						<span class='far fa-long-arrow-alt-right'></span>
+					</div>
+					<div class="box">
+						<i class="fas fa-car"></i>
+						<h3> renting a car</h3>
+						<p> feeling adventurous ? renting a car in zahle is a must if you need to extend your experience
+							to the
+							maximum </p>
+						<span class='far fa-long-arrow-alt-right'></span>
+					</div>
+					<div class="box">
+						<i class="fa-solid fa-tree"></i>
+						<h3>chilling in nature</h3>
+						<p>you will feel yourself in the nature here in zahle</p>
+						<span class='far fa-long-arrow-alt-right'></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="timer about wrapper">
+
+			<div class="container">
+				<div class="heading">
+					<h2 id="as"> Are you coming today</h2>
+				</div>
 
 
-        <ul class="nav-menu">
-          <li> <a href="index.html">Home</a> </li>
-          <li> <a href="aboutus.html">about</a> </li>
-          <li> <a href="hotels.html">hotels</a> </li>
-          <li> <a href="room.html">rooms</a> </li>
-          <li> <a href="#testimonials">testimonials</a> </li>
-          <li> <a href="restaurant.html">Restaurant</a> </li>
-          <li> <a href="#footer">contact</a> </li>
-        </ul>
-      </nav>
-    
-  </header>
-  <section class="home" id="home">
-    <div class="container">
-      <h1>Make Memories</h1>
-      <p>Discover the place where you have fun & enjoy a lot</p>
-      
-    </div>
-  </section>
+			</div>
 
-  <div class="img">
-    <section class="wrapper">
-      <div class="container">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="heading">
-              <h5>THE CITY VIEW</h5>
-              <h3>A charming view of the city</h3>
-            </div>
-            <p> When I have a chance to go back to my village, I always remind myself where I came from.
-              it's about my identity a piece of quit thoughts </p>
-            <p> having to visit zahle is a must specially with the beautifull old houses who reminds you on lebanese
-              culture</p>
-          </div>
-          <div class="item">
-            <div class="heading">
-              <h5>THE CITY VIEW</h5>
-              <h3>A charming view of the city</h3>
-            </div>
-            <p> Zahle is about the beauty of its people, their kindness, their hope into the future and to a better
-              place </p>
-            <p> you will be gratefull when visiting Zahle specially when introducing to its dialect and most
-              importantantly its hotels ... </p>
-          </div>
-          <div class="item">
-            <div class="heading">
-              <h5>THE CITY VIEW</h5>
-              <h3>A charming view of the city</h3>
-            </div>
-            <p> Zahle is known for its wine caves one of them is Ksara Castle known for its sugar taste </p>
-            <p> While entering zahle you'll be grated with a status of a symbolic lady holdng a bunch of Grapes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-    <script>
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
-      })
-    </script>
-    <section class="wrapper2">
-      <div class="container">
-        <div class="heading mtop">
-          <h5>FACILITIES</h5>
-          <h2>Giving entirely awesome </h2>
-        </div>
-        <div class="content grid mtop">
-          <div class="box">
-            <i class="fas fa-shipping-fast"></i>
-            <h3>Pick Up & Drop</h3>
-            <p> do not worry, our 24/7 taxi services is ready to pick you up whenever you need</p>
-            <span class='far fa-long-arrow-alt-right'></span>
-          </div>
-          <div class="box">
-            <i class="fas fa-mug-hot"></i>
-            <h3>Sipping Cofee</h3>
-            <p> As your working or thinking our Coffees places are nice to hangouts and work </p>
-            <span class='far fa-long-arrow-alt-right'></span>
-          </div>
-          <div class="box">
-            <i class="fas fa-car"></i>
-            <h3> renting a car</h3>
-            <p> feeling adventurous ? renting a car in zahle is a must if you need to extend your experience to the
-              maximum </p>
-            <span class='far fa-long-arrow-alt-right'></span>
-          </div>
-          <div class="box">
-            <i class="fa-solid fa-tree"></i>
-            <h3>chilling in nature</h3>
-            <p>you will feel yourself in the nature here in zahle</p>
-            <span class='far fa-long-arrow-alt-right'></span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="timer about wrapper">
-      
-      <div class="container">
-        <div class="heading">
-          <h2 id="as"> Are you coming today</h2>
-        </div>
-        
-
-      </div>
-
-    </section>
+		</section>
 
 
-    <section class="customer top" id="testimonials">
-      <div class="container">
-        <div class="heading">
-          <h5>TESTIMONIALS </h5>
-          <h3>What customers say </h3>
-        </div>
-        <div class="owl-carousel owl-theme mtop">
-          <div class="item">
-            <div class="rate">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>Excellent Swimming</h3>
-            <p> from our swimming pool you can enjoy your bottle of wine while you live with the nature
-              i was with my family and we really enjoyed our time while chilling and my girlfriend was tanning all time
-            </p>
-            <div class="admin flex">
-              <div class="img">
-                <img src="photos/c1.jpg" alt=" the person talking">
-              </div>
-              <div class="text">
-                <h3>ahmad barouk</h3>
-                <span>customer</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="rate">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h3> nature </h3>
-            <p> in our hotels, we have plenty of fresh nature you can enjoy the mountains while drinking one of the best
-              juices in our hotel. Our hotel welcome families and couples who enjoys living life like it should be</p>
-            <div class="admin flex">
-              <div class="img">
-                <img src="photos/c2.jpg" alt="the person talking">
-              </div>
-              <div class="text">
-                <h3>Abbas Hamyeh</h3>
-                <span> La Place's Owner</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="rate">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>nice workshift</h3>
-            <p> i am enjoying my workshift here, everyday i meet a lot of people they are very friendly and the salary
-              is great
-            </p>
-            <div class="admin flex">
-              <div class="img">
-                <img src="photos/c3.jpg" alt="the person talking">
-              </div>
-              <div class="text">
-                <h3>Roy Gebrayel</h3>
-                <span>Manager</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="customer top" id="testimonials">
+			<div class="container">
+				<div class="heading">
+					<h5>TESTIMONIALS </h5>
+					<h3>What customers say </h3>
+				</div>
+				<div class="owl-carousel owl-theme mtop">
+					<div class="item">
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h3>Excellent Swimming</h3>
+						<p> from our swimming pool you can enjoy your bottle of wine while you live with the nature
+							i was with my family and we really enjoyed our time while chilling and my girlfriend was
+							tanning all time
+						</p>
+						<div class="admin flex">
+							<div class="img">
+								<img src="photos/c1.jpg" alt=" the person talking">
+							</div>
+							<div class="text">
+								<h3>ahmad barouk</h3>
+								<span>customer</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h3> nature </h3>
+						<p> in our hotels, we have plenty of fresh nature you can enjoy the mountains while drinking one
+							of the best
+							juices in our hotel. Our hotel welcome families and couples who enjoys living life like it
+							should be</p>
+						<div class="admin flex">
+							<div class="img">
+								<img src="photos/c2.jpg" alt="the person talking">
+							</div>
+							<div class="text">
+								<h3>Abbas Hamyeh</h3>
+								<span> La Place's Owner</span>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<h3>nice workshift</h3>
+						<p> i am enjoying my workshift here, everyday i meet a lot of people they are very friendly and
+							the salary
+							is great
+						</p>
+						<div class="admin flex">
+							<div class="img">
+								<img src="photos/c3.jpg" alt="the person talking">
+							</div>
+							<div class="text">
+								<h3>Roy Gebrayel</h3>
+								<span>Manager</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <script>
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
-      })
-    </script>
-
-  
-    <script>
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplayTimeout: 4000,
-        autoplaySpeed: 4000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 3
-          },
-          1000: {
-            items: 5
-          }
-        }
-      })
-    </script>
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: false,
+				dots: false,
+				navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
+				}
+			})
+		</script>
 
 
-    <section class="map top">
+		<script>
+			$('.owl-carousel').owlCarousel({
+				loop: true,
+				margin: 0,
+				nav: false,
+				dots: false,
+				autoplay: true,
+				slideTransition: 'linear',
+				autoplayTimeout: 4000,
+				autoplaySpeed: 4000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					768: {
+						items: 3
+					},
+					1000: {
+						items: 5
+					}
+				}
+			})
+		</script>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.538186913925!2d35.91451468530637!3d33.85001843580825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87049d24c4b9b068!2zMzPCsDUxJzAwLjEiTiAzNcKwNTQnNDQuNCJF!5e0!3m2!1sar!2slb!4v1653479489910!5m2!1sar!2slb"
-        width="600" height="450" style="border:0;" 
-        referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
-        loading="lazy"></iframe>
-    </section>
-    <footer id="footer">
-      <div class="content">
-        <div class="left box">
-          <div class="upper">
-            <div class="topic" id="6">About us</div>
-            <p>website project about hotel booking in zahle and bequaa created to
-              web design project
-            </p>
-          </div>
-          <div class="lower">
-            <div class="topic" id="5">Contact us</div>
-            <div class="phone">
-              <a href="#"><i class="fa fa-phone-volume"></i>+961 78908363</a>
-              <br><a href="#"><i class="fa fa-phone-volume"></i> +961 76957430</a>
-            </div>
-            <div class="email">
-              <a href="#"><i class="fas fa-envelope"></i>abbashamyeh2004@gmail.com</a>
-              <br> <a href="#"><i class="fas fa-envelope"></i>roy.gebrayel10@gmail.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="middle box">
-          <div class="topic" id="7">Our Services</div>
-          <div><a href="#">Web Design</a></div>
-          <div><a href="#">adobe illustrator </a></div>
-          <div><a href="#">adobe photoshop</a></div>
-          <div><a href="#">programming</a></div>
-          <div><a href="#">accounting programs</a></div>
-        </div>
-        <div class="right box">
-          <div class="topic">Subscribe us</div>
-          <form>
-            <input type="text" placeholder="Enter email address">
-            <input type="submit" onclick="myFunction()" name="" value="Send">
-            <div class="media-icons">
-              <a href="https://www.facebook.com/abbas.hamyeh.7" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/roy.gebrayel/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.twitter.com/Roygebrayel" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://github.com/Roygebrayel/Booking-website" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="bottom">
-        <p>Copyright © 2022 All rights reserved: Abbas & Roy</p>
-      </div>
-    </footer>
+
+		<section class="map top">
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.538186913925!2d35.91451468530637!3d33.85001843580825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87049d24c4b9b068!2zMzPCsDUxJzAwLjEiTiAzNcKwNTQnNDQuNCJF!5e0!3m2!1sar!2slb!4v1653479489910!5m2!1sar!2slb"
+				width="600" height="450" style="border:0;" referrerpolicy="no-referrer-when-downgrade" width="600"
+				height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+		<footer id="footer">
+			<div class="content">
+				<div class="left box">
+					<div class="upper">
+						<div class="topic" id="6">About us</div>
+						<p>website project about hotel booking in zahle and bequaa created to
+							web design project
+						</p>
+					</div>
+					<div class="lower">
+						<div class="topic" id="5">Contact us</div>
+						<div class="phone">
+							<a href="#"><i class="fa fa-phone-volume"></i>+961 78908363</a>
+							<br><a href="#"><i class="fa fa-phone-volume"></i> +961 76957430</a>
+						</div>
+						<div class="email">
+							<a href="#"><i class="fas fa-envelope"></i>abbashamyeh2004@gmail.com</a>
+							<br> <a href="#"><i class="fas fa-envelope"></i>roy.gebrayel10@gmail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="middle box">
+					<div class="topic" id="7">Our Services</div>
+					<div><a href="#">Web Design</a></div>
+					<div><a href="#">adobe illustrator </a></div>
+					<div><a href="#">adobe photoshop</a></div>
+					<div><a href="#">programming</a></div>
+					<div><a href="#">accounting programs</a></div>
+				</div>
+				<div class="right box">
+					<div class="topic">Subscribe us</div>
+					<form>
+						<input type="text" placeholder="Enter email address">
+						<input type="submit" onclick="myFunction()" name="" value="Send">
+						<div class="media-icons">
+							<a href="https://www.facebook.com/abbas.hamyeh.7" target="_blank"><i
+									class="fab fa-facebook"></i></a>
+							<a href="https://www.instagram.com/roy.gebrayel/" target="_blank"><i
+									class="fab fa-instagram"></i></a>
+							<a href="https://www.twitter.com/Roygebrayel" target="_blank"><i
+									class="fab fa-twitter"></i></a>
+							<a href="https://github.com/Roygebrayel/Booking-website" target="_blank"><i
+									class="fab fa-github"></i></a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="bottom">
+				<p>Copyright © 2022 All rights reserved: Abbas & Roy</p>
+			</div>
+		</footer>
 </body>
 
 </html>

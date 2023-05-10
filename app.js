@@ -1,6 +1,7 @@
 const express = require('express');
 const authRoutes = require('./routes/auths-routes');
 const homeRoutes = require('./routes/home-routes');
+
 const app = express();
 const keys = require('./configurations/keys');
 const passportSetup = require('./configurations/passport-setup');
@@ -98,6 +99,7 @@ app.set('view engine','ejs');
 // set up routes
 app.use('/auth',authRoutes);
 app.use('/home',homeRoutes);
+
 
 app.get('/', (req, res) => {
   const images = ['/images/logo.jpg'];
