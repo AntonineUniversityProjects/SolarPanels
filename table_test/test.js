@@ -57,3 +57,62 @@ buttons.forEach(button => {
       delete activeSlide.dataset.active
    })
 })
+
+
+
+
+   < nav >
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav >
+
+
+   body {
+   margin: 0;
+   padding: 0;
+}
+
+header {
+   background - color: #333;
+   padding: 20px;
+}
+
+nav {
+   display: flex;
+   justify - content: space - between;
+   align - items: center;
+}
+
+.logo img {
+   max - width: 100px;
+}
+
+.menu {
+   list - style - type: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.menu li {
+   margin - right: 20px;
+}
+
+.menu li a {
+   color: #fff;
+   text - decoration: none;
+   font - weight: bold;
+   transition: color 0.3s;
+}
+
+.menu li a:hover {
+   color: #ffcc00;
+}
+
