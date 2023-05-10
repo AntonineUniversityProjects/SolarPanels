@@ -1,510 +1,1112 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-<title>Home</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+  <link href="style1.css" rel="stylesheet">
+  <link href="footer.css" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.0/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-
-
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+     
 
 </head>
-<body>
-	<style>
-	footer{
-		width: 100%;
-		bottom: 0;
-		left: 0;
-		background: #111;
-		
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+	
+	* {
+	  padding: 0;
+	  margin: 0;
+	  box-sizing: border-box;
+	}
+	.space{
+	margin-bottom:30px;
+	}
+	#padding {
+	  width: 700px;
+	  height: 500px;
+	  padding-right: 200px;
+	  padding-top: 50px;
+	  padding-left: 20px;
+	}
+	
+	body {
+	  font-family: 'Poppins', sans-serif;
+	  scroll-behavior: smooth;
+	}
+	
+	.head img {
+	
+	position: absolute;
+	left: 2px;
+	width: 60px;
+	height: 60px;
+	}
+	
+	.address{
+	  padding-left: 1000px;
+	
+	}
+	
+	.container {
+	  display: block;
+	  width: 100%;
+	  margin: auto;
+	}
+	
+	li {
+	  list-style: none;
+	}
+	
+	a {
+	  text-decoration: none;
+	  transition: 0.5s;
+	}
+	
+	.flex {
+	  display: flex;
+	}
+	
+	.flex1 {
+	  display: flex;
+	  justify-content: space-between;
+	}
+	.flex2 {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	}
+	
+	/*-------------head--------- */
+	.head {
+	  height: 10vh;
+	  line-height: 10vh;
 	  
-	  }
-	  footer .content{
-		max-width: 1350px;
-		margin: auto;
-		padding: 20px;
-		display: flex;
-		flex-wrap: wrap;
+	}
+	
+	.head i {
+	  width: 30px;
+	  height: 30px;
+	  border-radius: 50%;
+	  line-height: 30px;
+	  background: #FAF3E7;
+	  text-align: center;
+	  color: #CC8C18;
+	}
+	
+	.head img {
+	  margin-bottom: 10px;
+	}
+	
+	/*-------------head--------- */
+	/*-------------header--------- */
+	header {
+	  background: #CC8C18;
+	  padding: 15px 0 15px 0;
+	  color: white;
+	}
+	
+	.navbar {
+	  display: flex;
+	  align-items: center;
+	}
+	
+	
+	
+	.bar {
+	  display: block;
+	  width: 25px;
+	  height: 3px;
+	  margin: 5px auto;
+	  transition: all 0.5s ease-in-out;
+	  background: white;
+	}
+	
+	.nav-menu {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+	
+	header ul {
+	  padding: 0 20px 0 0;
+	}
+	
+	header li {
+	  margin-right: 30px;
+	}
+	
+	header ul li a {
+	  font-size: 15px;
+	  color: white;
+	  text-transform: uppercase;
+	  font-weight: 500;
+	  transition: 0.5s;
+	}
+	
+	header ul li a:hover {
+	  color: #000;
+	}
+	
+	
+	
+	
+	@media only screen and (max-width:768px) {
+	
+	  /*------------head------------*/
+	  
+	  /*------------head------------*/
+	 
+	  .navbar {
+		height: 5vh;
 		justify-content: space-between;
 	  }
-	  footer .content p,a{
-		color: #fff;
-	  }
-	  footer .content .box{
-		width: 33%;
-		transition: all 0.4s ease;
-	  }
-	  footer .content .topic{
-		font-size: 22px;
-		font-weight: 600;
-		color: #fff;
-		margin-bottom: 16px;
-	  
-	  }
-	  footer .content p{
-		text-align: justify;
-	  }
-	  footer .content .lower .topic{
-		margin: 24px 0 5px 0;
-	  }
-	  footer .content .lower i{
-		padding-right: 16px;
-	  }
-	  footer .content .middle{
-		padding-left: 80px;
-	  }
-	  footer .content .middle a{
-		line-height: 32px;
-	  }
-	  footer .content .right input[type="text"]{
-		height: 45px;
-		width: 100%;
-		outline: none;
-		color: #d9d9d9;
-		background: #000;
-		border-radius: 5px;
-		padding-left: 10px;
-		font-size: 17px;
-		border: 2px solid #222222;
-	  }
-	  footer .content .right input[type="submit"]{
-		height: 42px;
-		width: 100%;
-		font-size: 18px;
-		color: #d9d9d9;
-		background: #eb2f06;
-		outline: none;
-		border-radius: 5px;
-		letter-spacing: 1px;
-		cursor: pointer;
-		margin-top: 12px;
-		border: 2px solid #eb2f06;
-		transition: all 0.3s ease-in-out;
-	  }
-	  .content .right input[type="submit"]:hover{
-		background: none;
-		color:  #eb2f06;
-	  }
-	  footer .content .media-icons a{
-		font-size: 16px;
-		height: 45px;
-		width: 45px;
-		display: inline-block;
-		text-align: center;
-		line-height: 43px;
-		border-radius: 5px;
-		border: 2px solid #222222;
-		margin: 30px 5px 0 0;
-	  
-	  }
-	  .content .media-icons a:hover{
-		border-color: #eb2f06;
-	  }
-	  footer .bottom{
-		width: 100%;
-		text-align: right;
-		color: #d9d9d9;
-		padding: 0 40px 5px 0;
-	  }
-	  footer .bottom a{
-		color: #eb2f06;
-	  }
-	  footer a{
-		transition: all 0.3s ease;
-	  }
-	  footer a:hover{
-		color: #eb2f06;
-	  }
-	  @media (max-width:1100px) {
-		footer .content .middle{
-		  padding-left: 50px;
-		}
-	  }
-	  @media (max-width:950px){
-		footer .content .box{
-		  width: 50%;
-		}
-		.content .right{
-		  margin-top: 40px;
-		}
-	  }
-	  @media (max-width:560px){
-		footer{
-		  position: relative;
-		}
-		footer .content .box{
-		  width: 100%;
-		  margin-top: 30px;
-		}
-		footer .content .middle{
-		  padding-left: 0;
-		}
-	  }
-	  </style>
-<style>
-
-	*,*:after,*:before{
 	
-	box-sizing: border-box;
-}
-body{
-	font-family: arial;
-	font-size: 20px;
-	margin: 0;
-	background: #0f4dff;
-	background: #003ce9;
-	background: #0276ad;
-	background: #fff;
-	color: #222;
-}
+	  .nav-menu {
+	position: relative;
+		right: 50%;
+		top: 5rem;
+		flex-direction: column;
+		background: #CC8C18;
+		width: 100%;
+		border-radius: 10px;
+		text-align: center;
+		transition: 0.3s;
+		z-index: 99;
+	  }
+	
+	  
+	  header ul li a {
+		color: white;
+	  }
+	
+	  .nav-menu{
+		right: 0;
+	  }
+	
+	  header li {
+		margin: 2.5rem 0;
+	  }
+	
+	 
+	}
+	
+	/*------------home------------*/
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(5, 1fr);
+	  grid-gap: 30px;
+	}
+	
+	.home {
+	  background-image: url("images/solar_background.jpg");
+	  height: 100vh;
+	  background-attachment: fixed;
+	  background-position: center;
+	 
+	  background-size: cover;
+	  text-align: center;
+	}
+	
+	.home h1 {
+	  font-family: 'Great Vibes', cursive;
+	  font-size: 150px;
+	  color: white;
+	  padding-top: 10%;
+	}
+	
+	.home p {
+	  color: white;
+	}
+	
+	.home .content {
+	  text-align: left;
+	  color: black;
+	  margin-top: 7%;
+	}
+	
+	.home .box {
+	  background: white;
+	  padding: 35px;
+	}
+	
+	.home input {
+	  margin-top: 10px;
+	}
+	
+	input {
+	  border: none;
+	  outline: none;
+	}
+	
+	button {
+	  background: #CC8C18;
+	  color: white;
+	  padding: 10px 20px;
+	  outline: none;
+	  border: none;
+	  border-radius: 30px;
+	}
+	
+	button i {
+	  margin-left: 20px;
+	  font-size: 25px;
+	}
+	
+	button span {
+	  margin-top: 5px;
+	}
+	
+	/*------------home------------*/
+	/*------------about------------*/
+	
+	
+	.heading {
+	  text-align: center;
+	}
+	
+	.heading h5 {
+	  font-weight: 400;
+	  letter-spacing: 5px;
+	  color: #CC8C18;
+	  padding-top: 20px;
+	}
+	
+	
+	.heading h2 {
+	  color: #24416B;
+	  font-size: 45px;
+	  font-family: serif;
+	  font-weight: bold;
+	  margin: 10px 0 20px 0;
+	  
+	}
+	#as{
+	  color: #CC8C18;
+	}
+	
+	.left,
+	.right {
+	  
+	  width: 50%;
+	
+	  
+	}
+	#ph{
+	  width: 800px;
+	}
+	
+	h3 {
+	  font-size: 35px;
+	  font-family: serif;
+	  color: #24416B;
+	  margin-bottom: 20px;
+	}
+	
+	.about .left {
+	  padding: 20px;
+	}
+	
+	p {
+	  line-height: 30px;
+	  color: #a4a4a4;
+	  margin-bottom: 20px;
+	  font-size: 15px;
+	}
+	
+	.about {
+	  position: relative;
+	  padding-bottom: 70px;
+	}
+	
+	.about .right {
+	  position: relative;
+	}
+	
+	/*------------about------------*/
+	/*------------wrapper------------*/
+	.wrapper {
+	  background-image: url(photos/aera.jpg);
+	  height: 80vh;
+	  background-attachment: fixed;
+	  background-position: center;
+	
+	  background-size: cover;
+	}
+	
+	.wrapper .container {
+	  max-width: 50%;
+	  margin: auto;
+	}
+	
+	.wrapper .item {
+	  background: hsl(0, 0%, 100%);
+	  padding: 50px;
+	  margin-top: 15%;
+	  border: 30px solid #F3F3F3;
+	  border-bottom: none;
+	}
+	
+	.wrapper .heading {
+	  text-align: left;
+	}
+	
+	.owl-nav .owl-next,
+	.owl-nav .owl-prev {
+	  height: 47px;
+	  position: absolute;
+	  top: 60%;
+	  width: 26px;
+	  cursor: pointer;
+	  background: none !important;
+	}
+	
+	.owl-nav .owl-prev {
+	  left: 0;
+	}
+	
+	.owl-nav .owl-next {
+	  right: 53px;
+	}
+	
+	.owl-nav .owl-next i,
+	.owl-nav .owl-prev i {
+	  background: white;
+	  padding: 7px;
+	  border-radius: 50%;
+	  color: #CC8C18;
+	  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.05);
+	  transition: 0.5s;
+	}
+	
+	.owl-nav .owl-next i:hover,
+	.owl-nav .owl-prev i:hover {
+	  background: #CC8C18;
+	  color: white;
+	}
+	
+	/*------------wrapper------------*/
+	
+	.wrapper2 {
+	  position: relative;
+	  text-align: center;
+	}
+	.wrapper2 .grid {
+	  grid-template-columns: repeat(4, 1fr);
+	}
+	
+	
+	.wrapper2 .box {
+	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+	  padding: 20px;
+	  transition: 0.5s;
+	}
+	
+	.wrapper2 i {
+	  margin: 10px 0 15px 0;
+	  color: #CC8C18;
+	  font-size: 30px;
+	}
+	
+	.wrapper2 h3 {
+	  font-size: 20px;
+	}
+	
+	.wrapper2 span {
+	  padding: 10px;
+	  background: #F5E8D1;
+	  color: #CC8C18;
+	  border-radius: 50%;
+	}
+	
+	.wrapper2 .box:hover {
+	  background: #CC8C18;
+	  cursor: pointer;
+	}
+	
+	.wrapper2 .box:hover span {
+	  background: #fff;
+	}
+	
+	.wrapper2 .box:hover p,
+	.wrapper2 .box:hover h3,
+	.wrapper2 .box:hover i {
+	  color: white;
+	}
+	
+	
+	
+	/*------------wrapper2------------*/
+	
+	/*------------timer------------*/
+	.timer {
+	  position: relative;
+	  text-align: center;
+	  padding-top: 12%;
+	}
+	
+	.timer.wrapper {
+	  background-image: url("photos/Zahle\,Lebanon.jpg");
+	}
+	
+	
+	
+	/*------------timer------------*/
+	
+	/*------------room------------*/
+	.room {
+	  margin-bottom: 50px;
+	  position: relative;
+	}
+	
+	.grid2 {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  grid-gap: 30px;
+	}
+	
+	
+	.room h3 {
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	/*------------room------------*/
+	
+	/*------------offer------------*/
+	.offer img {
+	  width: 100%;
+	  height: 100%;
+	}
+	
+	.offer .right {
+	  padding: 20px;
+	  margin: 20px;
+	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+	}
+	
+	.offer .content h4 {
+	  font-size: 20px;
+	  color: #627795;
+	  font-family: serif;
+	}
+	
+	.offer .rate i {
+	  font-size: 13px;
+	  color: #CC8C18;
+	  margin: 10px 10px 20px 0;
+	}
+	
+	.offer .content h5 {
+	  color: #627795;
+	  margin-bottom: 10px;
+	}
+	
+	.offer .box {
+	  transition: 0.5s;
+	}
+	
+	.offer .box:hover {
+	  transform: translateY(-10px);
+	}
+	
+	/*------------offer------------*/
+	/*------------area------------*/
+	.area img {
+	  margin: 0px 0 20px 80px;
+	}
+	
+	.area ul li {
+	  display: inline-block;
+	  font-weight: 500;
+	  color: #5c646e;
+	  margin-right: 20px;
+	  margin-bottom: 20px;
+	}
+	
+	.area .left {
+	  position: relative;
+	}
+	
+	.area .left::after {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  content: '';
+	  width: 85%;
+	  height: 92%;
+	  margin: 30px;
+	  background: #CC8C18;
+	  z-index: -1;
+	}
+	
+	/*------------area------------*/
+	
+	/*------------customer------------*/
+	.customer .mtop {
+	  padding: 30px;
+	  max-width: 60%;
+	  margin: auto;
+	  text-align: center;
+	  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+	}
+	
+	.customer i {
+	  color: #CC8C18;
+	  font-size: 13px;
+	}
+	
+	.customer .item h3 {
+	  font-size: 20px;
+	}
+	
+	.customer img {
+	  width: 70px;
+	  height: 70px;
+	  border-radius: 50%;
+	}
+	
+	.customer .admin {
+	  justify-content: center;
+	}
+	
+	.customer .admin h3 {
+	  margin: 0;
+	}
+	
+	.customer .text {
+	  margin: 10px;
+	}
+	
+	.customer span {
+	  opacity: 0.7;
+	}
+	
+	/*------------customer------------*/
+	
+	.item {
+	  position: relative;
+	  cursor: pointer;
+	}
+	
+	 .overlay i {
+	  position: absolute;
+	  top: 40%;
+	  left: 40%;
+	  z-index: 1;
+	  opacity: 0;
+	  font-size: 50px;
+	  color: white;
+	}
+	
+	 .overlay {
+	  position: absolute;
+	  content: '';
+	  background: rgba(204, 140, 24, 0.73);
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  opacity: 0;
+	}
+	
+	 .item:hover .overlay,
+	 .item:hover i {
+	  opacity: 1;
+	  transition: 0.5s;
+	  cursor: pointer;
+	}
+	
+	
+	
+	
+	
+	/*------------map------------*/
+	
+	.map iframe {
+	  width: 100%;
+	}
+	
+	/*------------map------------*/
+	
+	
+	
 
-header{
-	background: #003046;
-	padding: 15px;
-	text-align: center;
-	color: #fff;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
-.container{
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-.tabs_nav{
-	background: #0572a5;
-}
-.tabs_nav.fixed{
-	position: fixed;
-	left: 0;
-	width: 100%;
-	z-index: 1000
-}
-.tabs_nav ul{
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.tabs_nav ul li{
-	display: inline-block;
-}
-.tabs_nav ul li a{
-	color: #fff;
-	text-transform: uppercase;
-	padding: 15px;
-	display: block;
-	text-decoration: none;
-	font-size: 17px;
-	transition: all 0.3s ease-in-out; 
-}
-.tabs_nav ul li:hover a,.tabs_nav ul li.active a{
-	background: #fff;
-	color: #0572a5;
-}
-
-.scroll_section{
-	padding: 30px 0
-}
-
-
-
-.home {
-  background-image: url("/assets/images/solar.jpg");
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
- 
-  background-size: cover;
-  text-align: center;
-}
-
-.home h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 150px;
-  color: white;
-  padding-top: 10%;
-}
-
-.home p {
-  color: white;
-}
-
-
-.services {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.services h1 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 600;
-    border: 6px;
-
-}
-
-.image {
-    margin-top: 20px;
-    position: relative;
-    width: 400px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-sell {
-    display: block;
+	footer{
     width: 100%;
-    height: 300px;
-}
-
-.image-sell-overlay {
-    position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: #111;
+    
+  
+  }
+  footer .content{
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a{
+    color: #fff;
+  }
+  footer .content .box{
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+  
+  }
+  footer .content p{
+    text-align: justify;
+  }
+  footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i{
+    padding-right: 16px;
+  }
+  footer .content .middle{
+    padding-left: 80px;
+  }
+  footer .content .middle a{
+    line-height: 32px;
+  }
+  footer .content .right input[type="text"]{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  footer .content .right input[type="submit"]{
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #d9d9d9;
+    background: #eb2f06;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
     cursor: pointer;
-}
+    margin-top: 12px;
+    border: 2px solid #eb2f06;
+    transition: all 0.3s ease-in-out;
+  }
+  .content .right input[type="submit"]:hover{
+    background: none;
+    color:  #eb2f06;
+  }
+  footer .content .media-icons a{
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+  
+  }
+  .content .media-icons a:hover{
+    border-color: #eb2f06;
+  }
+  footer .bottom{
+    width: 100%;
+    text-align: right;
+    color: #d9d9d9;
+    padding: 0 40px 5px 0;
+  }
+  footer .bottom a{
+    color: #eb2f06;
+  }
+  footer a{
+    transition: all 0.3s ease;
+  }
+  footer a:hover{
+    color: #eb2f06;
+  }
+  @media (max-width:1100px) {
+    footer .content .middle{
+      padding-left: 50px;
+    }
+  }
+  @media (max-width:950px){
+    footer .content .box{
+      width: 50%;
+    }
+    .content .right{
+      margin-top: 40px;
+    }
+  }
+  @media (max-width:560px){
+    footer{
+      position: relative;
+    }
+    footer .content .box{
+      width: 100%;
+      margin-top: 30px;
+    }
+    footer .content .middle{
+      padding-left: 0;
+    }
+  }
+  
+	</style>
 
-.image-sell-overlay:hover {
-    opacity: 1;
-}
+<body>
 
-.image-desc {
-    font-size: 50px;
-    font-weight: bold;
-}
 
-.carousel {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-}
-
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.slide[data-active] {
-  opacity: 1;
-  z-index: 1;
-  transition-delay: 0ms;
-}
-
-.carousel-button {
-  position: absolute;
-  z-index: 2;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, .5);
-  cursor: pointer;
-  border-radius: .25rem;
-  padding: 0 .5rem;
-  background-color: rgba(0, 0, 0, .1);
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
-  background-color: rgba(0, 0, 0, .2);
-}
-
-.carousel-button:focus {
-  outline: 1px solid black;
-}
-
-.carousel-button.prev {
-  left: 1rem;
-}
-
-.carousel-button.next {
-  right: 1rem;
-}
+  
 
 
 
+  <header class="header">
+	<section class="head">
 
-</style>
-
-<div class="header-height"></div>
-
-
-<section class="tabs_nav">
-	<div class="container">
-		<ul>
-			<li><a href="#">HTML</a></li>
-			<li><a href="#">CSS</a></li>
-			<li><a href="#">JavaScript</a></li>
-			<li><a href="#">Python</a></li>
-			<li><a href="#">JAVA</a></li>
-		</ul>
-	</div>
-</section>
-
-<section class="home" id="home">
-	<div class="container">
-		<h1>Make electricity<i class="fa fa-light"></i></h1>
-		
-
-		
+		<div class="container flex1">
+		  <img src="images/logo.jpg" alt="a logo about solar panels">
+	
 		</div>
-	</div>
-</section>
-</section>
-
-<section aria-label="Newest Photos">
-	<div class="carousel" data-carousel>
-		<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-		<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-		<ul data-slides>
-			<li class="slide" data-active>
-				<img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
-			</li>
-			<li class="slide">
-				<img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
-			</li>
-			<li class="slide">
-				<img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
-			</li>
-		</ul>
-	</div>
-</section>
-<button id="#data-carousel-button" >but</button>
-
-<!--  section about the services we provide -->
+		</div>
+	  </section>
+	
+ 
+      <nav class="navbar flex1">
 
 
+        <ul class="nav-menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="aboutus.html">about</a> </li>
+          <li> <a href="hotels.html">hotels</a> </li>
+          <li> <a href="room.html">rooms</a> </li>
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="restaurant.html">Restaurant</a> </li>
+          <li> <a href="#footer">contact</a> </li>
+        </ul>
+      </nav>
+    
+  </header>
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Make Memories</h1>
+      <p>Discover the place where you have fun & enjoy a lot</p>
+      
+    </div>
+  </section>
 
-<div class="services">
-	<h1>Services We Offer</h1>
-	<div class="image">
-		<a href="/HTML/DriverReg.html"><img class="image-sell" src="images/solar.jpg" class="sell " alt="Sell cars">
-			<div class="image-sell-overlay">
-				<p class="image-desc">Buy a solar panel</p>
-			</div>
-		</a>
-	</div>
-	<div class="image">
-		<a href="/HTML/ViewerReg.html">
-			<img class="image-sell" src="/assets/images/maintenanace.jpeg" class="sell "
-				alt="Buy accessories cars">
+  <div class="img">
+    <section class="wrapper">
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="heading">
+              <h5>THE CITY VIEW</h5>
+              <h3>A charming view of the city</h3>
+            </div>
+            <p> When I have a chance to go back to my village, I always remind myself where I came from.
+              it's about my identity a piece of quit thoughts </p>
+            <p> having to visit zahle is a must specially with the beautifull old houses who reminds you on lebanese
+              culture</p>
+          </div>
+          <div class="item">
+            <div class="heading">
+              <h5>THE CITY VIEW</h5>
+              <h3>A charming view of the city</h3>
+            </div>
+            <p> Zahle is about the beauty of its people, their kindness, their hope into the future and to a better
+              place </p>
+            <p> you will be gratefull when visiting Zahle specially when introducing to its dialect and most
+              importantantly its hotels ... </p>
+          </div>
+          <div class="item">
+            <div class="heading">
+              <h5>THE CITY VIEW</h5>
+              <h3>A charming view of the city</h3>
+            </div>
+            <p> Zahle is known for its wine caves one of them is Ksara Castle known for its sugar taste </p>
+            <p> While entering zahle you'll be grated with a status of a symbolic lady holdng a bunch of Grapes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    </script>
+    <section class="wrapper2">
+      <div class="container">
+        <div class="heading mtop">
+          <h5>FACILITIES</h5>
+          <h2>Giving entirely awesome </h2>
+        </div>
+        <div class="content grid mtop">
+          <div class="box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Pick Up & Drop</h3>
+            <p> do not worry, our 24/7 taxi services is ready to pick you up whenever you need</p>
+            <span class='far fa-long-arrow-alt-right'></span>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <h3>Sipping Cofee</h3>
+            <p> As your working or thinking our Coffees places are nice to hangouts and work </p>
+            <span class='far fa-long-arrow-alt-right'></span>
+          </div>
+          <div class="box">
+            <i class="fas fa-car"></i>
+            <h3> renting a car</h3>
+            <p> feeling adventurous ? renting a car in zahle is a must if you need to extend your experience to the
+              maximum </p>
+            <span class='far fa-long-arrow-alt-right'></span>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-tree"></i>
+            <h3>chilling in nature</h3>
+            <p>you will feel yourself in the nature here in zahle</p>
+            <span class='far fa-long-arrow-alt-right'></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			
-				<div class="image-sell-overlay">
-				<p class="image-desc">maintenanace</p>
-			</div>
-		</a>
-	</div>
+    <section class="timer about wrapper">
+      
+      <div class="container">
+        <div class="heading">
+          <h2 id="as"> Are you coming today</h2>
+        </div>
+        
+
+      </div>
+
+    </section>
 
 
+    <section class="customer top" id="testimonials">
+      <div class="container">
+        <div class="heading">
+          <h5>TESTIMONIALS </h5>
+          <h3>What customers say </h3>
+        </div>
+        <div class="owl-carousel owl-theme mtop">
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Excellent Swimming</h3>
+            <p> from our swimming pool you can enjoy your bottle of wine while you live with the nature
+              i was with my family and we really enjoyed our time while chilling and my girlfriend was tanning all time
+            </p>
+            <div class="admin flex">
+              <div class="img">
+                <img src="photos/c1.jpg" alt=" the person talking">
+              </div>
+              <div class="text">
+                <h3>ahmad barouk</h3>
+                <span>customer</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3> nature </h3>
+            <p> in our hotels, we have plenty of fresh nature you can enjoy the mountains while drinking one of the best
+              juices in our hotel. Our hotel welcome families and couples who enjoys living life like it should be</p>
+            <div class="admin flex">
+              <div class="img">
+                <img src="photos/c2.jpg" alt="the person talking">
+              </div>
+              <div class="text">
+                <h3>Abbas Hamyeh</h3>
+                <span> La Place's Owner</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>nice workshift</h3>
+            <p> i am enjoying my workshift here, everyday i meet a lot of people they are very friendly and the salary
+              is great
+            </p>
+            <div class="admin flex">
+              <div class="img">
+                <img src="photos/c3.jpg" alt="the person talking">
+              </div>
+              <div class="text">
+                <h3>Roy Gebrayel</h3>
+                <span>Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    </script>
+
+  
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 4000,
+        autoplaySpeed: 4000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+
+
+    <section class="map top">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.538186913925!2d35.91451468530637!3d33.85001843580825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87049d24c4b9b068!2zMzPCsDUxJzAwLjEiTiAzNcKwNTQnNDQuNCJF!5e0!3m2!1sar!2slb!4v1653479489910!5m2!1sar!2slb"
+        width="600" height="450" style="border:0;" 
+        referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
+        loading="lazy"></iframe>
+    </section>
+    <footer id="footer">
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic" id="6">About us</div>
+            <p>website project about hotel booking in zahle and bequaa created to
+              web design project
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic" id="5">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fa fa-phone-volume"></i>+961 78908363</a>
+              <br><a href="#"><i class="fa fa-phone-volume"></i> +961 76957430</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>abbashamyeh2004@gmail.com</a>
+              <br> <a href="#"><i class="fas fa-envelope"></i>roy.gebrayel10@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic" id="7">Our Services</div>
+          <div><a href="#">Web Design</a></div>
+          <div><a href="#">adobe illustrator </a></div>
+          <div><a href="#">adobe photoshop</a></div>
+          <div><a href="#">programming</a></div>
+          <div><a href="#">accounting programs</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form>
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" onclick="myFunction()" name="" value="Send">
+            <div class="media-icons">
+              <a href="https://www.facebook.com/abbas.hamyeh.7" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/roy.gebrayel/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com/Roygebrayel" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/Roygebrayel/Booking-website" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2022 All rights reserved: Abbas & Roy</p>
+      </div>
+    </footer>
 </body>
-<footer id="footer">
-	<div class="content">
-	  <div class="left box">
-		<div class="upper">
-		  <div class="topic" id="6">About us</div>
-		  <p>website project about hotel booking in zahle and bequaa created to
-			web design project
-		  </p>
-		</div>
-		<div class="lower">
-		  <div class="topic" id="5">Contact us</div>
-		  <div class="phone">
-			<a href="#"><i class="fa fa-phone-volume"></i>+961 78908363</a>
-			<br><a href="#"><i class="fa fa-phone-volume"></i> +961 76957430</a>
-		  </div>
-		  <div class="email">
-			<a href="#"><i class="fas fa-envelope"></i>abbashamyeh2004@gmail.com</a>
-			<br> <a href="#"><i class="fas fa-envelope"></i>roy.gebrayel10@gmail.com</a>
-		  </div>
-		</div>
-	  </div>
-	  <div class="middle box">
-		<div class="topic" id="7">Our Services</div>
-		<div><a href="#">Web Design</a></div>
-		<div><a href="#">adobe illustrator </a></div>
-		<div><a href="#">adobe photoshop</a></div>
-		<div><a href="#">programming</a></div>
-		<div><a href="#">accounting programs</a></div>
-	  </div>
-	  <div class="right box">
-		<div class="topic">Subscribe us</div>
-		<form>
-		  <input type="text" placeholder="Enter email address">
-		  <input type="submit" onclick="myFunction()" name="" value="Send">
-		  <div class="media-icons">
-			<a href="https://www.facebook.com/abbas.hamyeh.7" target="_blank"><i class="fab fa-facebook"></i></a>
-			<a href="https://www.instagram.com/roy.gebrayel/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.twitter.com/Roygebrayel" target="_blank"><i class="fab fa-twitter"></i></a>
-			<a href="https://github.com/Roygebrayel/Booking-website" target="_blank"><i class="fab fa-github"></i></a>
-		  </div>
-		</form>
-	  </div>
-	</div>
-	<div class="bottom">
-	  <p>Copyright © 2022 All rights reserved: Abbas & Roy</p>
-	</div>
-  </footer>
+
 </html>
