@@ -1,16 +1,11 @@
-.container {
-	margin: 20px auto;
-	width: 80%;
-	max-width: 800px;
-}
-
 table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
 	padding: 10px;
 	border: 1px solid #ccc;
 	text-align: center;
@@ -18,9 +13,12 @@ th, td {
 
 th {
 	background-color: #f2f2f2;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
-input[type="text"],input[type ="number"] {
+input[type="text"],
+input[type="number"] {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 8px;
@@ -32,14 +30,30 @@ button {
 	padding: 8px 16px;
 	border: none;
 	cursor: pointer;
-
+	border-radius: 4px;
 }
 
-  #show-price {
+#show-price {
 	float: right;
-  }
-  
+	margin-left: 10px;
+}
+
+#add-row {
+	background-color: #2196F3;
+	margin-right: 10px;
+}
 
 button:hover {
 	background-color: #3e8e41;
 }
+
+.button-wrapper {
+	margin-top: 20px;
+	text-align: right;
+}
+
+	.container {
+		margin-bottom: 1000px;
+	  }
+	  
+	

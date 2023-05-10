@@ -107,6 +107,14 @@ app.get('/', (req, res) => {
   res.render('login',{images});
 
 });
+app.get('/table', (req, res) => {
+  
+ 
+  res.render('table');
+
+});
+
+
 // app.get('/gallery', (req, res) => {
 //   const imagess = ['/assets/images/logo.jpg'];
 //   res.render('gallery', { imagess });
