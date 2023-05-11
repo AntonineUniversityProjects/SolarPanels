@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/register.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Regisration Form </title>
+</head>
+<script>
+    const form = document.querySelector("form"),
+            nextBtn = form.querySelector(".nextBtn")
+           
+
+
+        nextBtn.addEventListener("click", () => {
+            allInput.forEach(input => {
+                if (input.value != "") {
+                    form.classList.add('secActive');
+                } else {
+                    form.classList.remove('secActive');
+                }
+            })
+        })
+
+        backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+        function validateForm() {
+
+                var email = document.getElementById("email").value;
+                var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                // Check if the email is empty
+                if (email == "") {
+                    alert("Email field must be filled out");
+                    return false;
+                }
+                // Check if the email is in the correct format
+                if (!email.match(emailRegex)) {
+                    alert("Please enter a valid email address");
+                    return false;
+                }
+                // Check if the password is empty
+                // Get the value of the input field with id="password"
+                var password = document.getElementById("password").value;
+                // Regular expression to check if the password is strong enough
+                var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+                // Check if the password is empty
+                if (password == "") {
+                    alert("Password field must be filled out");
+                    return false;
+                }
+                // Check if the password is strong enough
+                if (!password.match(passwordRegex)) {
+                    alert("enter a strong passowrd(with numbers and upper cases)");
+                    return false;
+                }
+
+                // If all checks pass, return true
+                return true;
+            }
+</script>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form name="registrationForm" onsubmit="return validateForm()">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" id="email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your ccupation" required>
+                        </div>
+                    </div>
+                </div>
+
+             
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+          
+               
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+
+</html>

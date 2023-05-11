@@ -120,6 +120,12 @@ app.get('/gallery', (req, res) => {
   res.render('gallery');
 });
 
+app.get('/register', (req, res) => {
+
+  res.render('register');
+});
+
+
 
 
 app.listen(3000,() => {

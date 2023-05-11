@@ -12,22 +12,7 @@ function validateForm() {
       alert("Please enter a valid email address");
       return false;
     }
-    // Check if the password is empty
-// Get the value of the input field with id="password"
-var password = document.getElementById("password").value;
-// Regular expression to check if the password is strong enough
-var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
-// Check if the password is empty
-if (password == "") {
-alert("Password field must be filled out");
-return false;
-}
-// Check if the password is strong enough
-if (!password.match(passwordRegex)) {
-alert("enter a strong passowrd(with numbers and upper cases)");
-return false;
-}
-
+  
 // If all checks pass, return true
 return true;
 }
