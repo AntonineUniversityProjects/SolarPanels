@@ -125,7 +125,9 @@ app.get('/register', (req, res) => {
   res.render('register');
 });
 
-
+app.get('/contact', (req,res)=> {
+  res.render('contactus');
+})
 
 
 app.listen(3000,() => {
