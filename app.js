@@ -49,15 +49,16 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'antonineuniversityprojects@gmail.com',
-    pass: 'AUP2023AR'
+    pass: keys.mail.mailauth
   }
 });
 
 var mailOptions = {
   from: 'antonineuniversityprojects@gmail.com',
-  to: 'roy.gebrayel11@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
+  to: 'roy.gebrayel11@gmail.com , abbashamyeh2004@gmail.com , roy.gebrayel22@gmail.com',
+  subject: 'Welcome to SolarPanels.co',
+  text: 'We are glad you are here ! hope you enjoy our beautifull website',
+  html: '<h1> we are what we are </h1>'
 };
 
 transporter.sendMail(mailOptions, function (error, info) {

@@ -11,6 +11,10 @@ module.exports = {
     },
     session:{
         cookieKey:"piwpiwpiwahmadmohsenpipipippiwwwyaahmadyamohsin"
+    },
+
+    mail:{
+        mailauth: "pxgdyxfuakwvdaut"
     }
        
    
