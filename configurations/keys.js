@@ -1,8 +1,8 @@
 
 module.exports = {
     google: {
-         clientID:"1024970547894-efl5r8lhsk5ql5uohp51f5qr5m55hbl8.apps.googleusercontent.com",
-        clientSecret:"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"
+        clientID:"1024970547894-ib763a4op5t4kdpa1kg65aef2jin0spm.apps.googleusercontent.com",
+        clientSecret:"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"
     },
     mongodb:{
          dbauth:"mongodb+srv://roygebrayel:313@solarpanels-login.oiy6gcx.mongodb.net/?retryWrites=true&w=majority",
