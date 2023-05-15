@@ -9,6 +9,7 @@
 8- nginx<br>
 9- docker<br>
 10- php-fpm<br>
+11- nodemailer <br>
 
 ## Prerequisites
 * git
