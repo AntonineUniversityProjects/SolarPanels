@@ -1,14 +1,14 @@
 ## Technologies Used
-1- NodeJS
-2- Express
-3- EJS
-4- MongoDB
-5- Mongoose
-6- PassportJS
-7- cookie-session
-8- nginx
-9- docker
-10- php-fpm
+1- NodeJS <br>
+2- Express<br>
+3- EJS<br>
+4- MongoDB<br>
+5- Mongoose<br>
+6- PassportJS<br>
+7- cookie-session<br>
+8- nginx<br>
+9- docker<br>
+10- php-fpm<br>
 
 ## Prerequisites
 * git
