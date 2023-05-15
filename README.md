@@ -36,48 +36,48 @@ The Server should now be running at http://localhost:3000/
 
 ## Folder Structure
 
-SolarPanels/
-├─ configurations/
-│  ├─ keys.js
-│  ├─ nginx.conf
-│  ├─ passport-setup.js
-│  ├─ www.conf
-├─ mongodb/
-│  ├─ login.mongodb
-├─ routes/
-│  ├─ auth-routes.js
-│  ├─ home-routes.js
-├─ views/
-│  ├─ contactus.ejs
-│  ├─ gallery.ejs
-│  ├─ home.ejs
-│  ├─ login.ejs
-│  ├─ register.ejs
-│  ├─ table.ejs
-├─ .dockerignore
-├─ .gitignore
-├─ app.js
-├─ Dockerfile
-├─ LICENSE.md
-├─ package-lock.json
-├─ package.json
-├─ README.md
-├─ assets/
-│  ├─ php/
-│  ├─ css/
-|  |  ├─ table.css
-│  │  ├─ contactus.css
-│  │  ├─ gallery.css
-│  │  ├─ home.css
-│  │  ├─ login.css
-│  │  ├─ register.css
-│  ├─ js/
-│  │  ├─ table.js
-│  │  ├─ script.js
-│  ├─ images/
-├─ models/
-│  ├─ user-model.js
-├─ node_modules/
+SolarPanels/ <br>
+├─ configurations/ <br>
+│  ├─ keys.js <br>
+│  ├─ nginx.conf<br>
+│  ├─ passport-setup.js <br>
+│  ├─ www.conf<br>
+├─ mongodb/ <br>
+│  ├─ login.mongodb<br>
+├─ routes/<br>
+│  ├─ auth-routes.js<br>
+│  ├─ home-routes.js<br>
+├─ views/<br>
+│  ├─ contactus.ejs<br>
+│  ├─ gallery.ejs<br>
+│  ├─ home.ejs<br>
+│  ├─ login.ejs<br>
+│  ├─ register.ejs<br>
+│  ├─ table.ejs<br>
+├─ .dockerignore<br>
+├─ .gitignore<br>
+├─ app.js<br>
+├─ Dockerfile<br>
+├─ LICENSE.md<br>
+├─ package-lock.json<br>
+├─ package.json<br>
+├─ README.md<br>
+├─ assets/<br>
+│  ├─ php/<br>
+│  ├─ css/<br>
+|  |  ├─ table.css<br>
+│  │  ├─ contactus.css<br>
+│  │  ├─ gallery.css<br>
+│  │  ├─ home.css<br>
+│  │  ├─ login.css<br>
+│  │  ├─ register.css<br>
+│  ├─ js/<br>
+│  │  ├─ table.js<br>
+│  │  ├─ script.js<br>
+│  ├─ images/<br>
+├─ models/<br>
+│  ├─ user-model.js<br>
+├─ node_modules/<br>
 
 
 
