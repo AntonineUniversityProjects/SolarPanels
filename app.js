@@ -1,6 +1,7 @@
 const express = require('express');
 const authRoutes = require('./routes/auths-routes');
 const homeRoutes = require('./routes/home-routes');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const keys = require('./configurations/keys');
@@ -44,6 +45,29 @@ const { session } = require('passport');
 // });
 
 
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'antonineuniversityprojects@gmail.com',
+    pass: 'AUP2023AR'
+  }
+});
+
+var mailOptions = {
+  from: 'antonineuniversityprojects@gmail.com',
+  to: 'roy.gebrayel11@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
 mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
   useNewUrlParser: true,
@@ -61,7 +85,6 @@ mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
 //     const name = req.body.name;
 //     const email = req.body.email;
 // });
-
 
 
 
