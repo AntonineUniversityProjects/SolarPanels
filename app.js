@@ -45,29 +45,29 @@ const { session } = require('passport');
 // });
 
 
-// var transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   auth: {
-//     user: 'antonineuniversityprojects@gmail.com',
-//     pass: keys.mail.mailauth
-//   }
-// });
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'antonineuniversityprojects@gmail.com',
+    pass: keys.mail.mailauth
+  }
+});
 
-// var mailOptions = {
-//   from: 'antonineuniversityprojects@gmail.com',
-//   to: 'roy.gebrayel11@gmail.com , abbashamyeh2004@gmail.com , roy.gebrayel22@gmail.com',
-//   subject: 'Welcome to SolarPanels.co',
-//   text: 'We are glad you are here ! hope you enjoy our beautifull website',
-//   html: '<h1> power up your life with our limited solarpanels !!! </h1>'
-// };
+var mailOptions = {
+  from: 'antonineuniversityprojects@gmail.com',
+  to: 'roy.gebrayel11@gmail.com , abbashamyeh2004@gmail.com , roy.gebrayel22@gmail.com',
+  subject: 'Welcome to SolarPanels.co',
+  text: 'We are glad you are here ! hope you enjoy our beautifull website',
+  html: '<h1> power up your life with our limited solarpanels !!! </h1>'
+};
 
-// transporter.sendMail(mailOptions, function (error, info) {
-//   if (error) {
-//     console.log(error);
-//   } else {
-//     console.log('Email sent: ' + info.response);
-//   }
-// });
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
 
 //mongoose.connect(keys.mongodb.dbauth,()=>{console.log("connected to mongo db")});
 mongoose.connect(keys.mongodb.dbauth ,{dbName: 'solarpanels-login',
