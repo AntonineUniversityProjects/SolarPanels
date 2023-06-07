@@ -28,7 +28,7 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-button {
+button{
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -42,7 +42,10 @@ button {
 button:hover {
     background-color: #45a049;
 }
-
+button a {
+    text-decoration: none;
+    color: black;
+}
 
 
 .imgcontainer {
