@@ -86,6 +86,9 @@ SolarPanels/ <br>
 
 Thank you for considering contributing to SolarPanels project ! please fork our project and pull request your contribution.
 
+## Issues
+In order to view in details our issues and try to fix them .. please visit [ISSUES_TEMPLATES](https://github.com/AntonineUniversityProjects/SolarPanels/tree/main/.github/ISSUE_TEMPLATE)
+
 
 ## License
 
